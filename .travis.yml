@@ -1,0 +1,31 @@
+language: node_js
+node_js:
+  - "lts/*"
+
+stages:
+  - Checks
+  - name: Tests
+    if: NOT branch = master
+  - name: "Tests and Reports"
+    if: branch = master
+
+jobs:
+  include:
+    - stage: Checks
+      script:
+        - gem install awesome_bot
+        - awesome_bot *.md --allow-redirect --white-list travis-ci,packagephobia.now
+      name: Check Doc links
+
+    - stage: "Tests and Reports"
+      script: npm run test:coverage && npm run coveralls
+      name: Run Unit Tests, generate coverage and publish to coveralls
+
+    - script: npm run test:mutation-report
+      name: Run Mutation Tests and publish reports
+
+    - stage: Tests
+      name: Run Unit Tests
+
+    - script: npm run test:mutation
+      name: Run Mutation Tests

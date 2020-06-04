@@ -12,7 +12,7 @@
 
 Coverage
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/tiagoporto/json-map-keys-loader/Tests/master?label=Tests&logo=github&style=flat-square)](https://github.com/tiagoporto/json-map-keys-loader/actions?query=workflow%3ATests)
+[![Build Status](https://img.shields.io/travis/com/tiagoporto/json-map-keys-loader/master.svg?label=tests&logo=travis&style=flat-square)](https://travis-ci.com/tiagoporto/json-map-keys-loader)
 [![Coverage Status](https://img.shields.io/coveralls/tiagoporto/json-map-keys-loader.svg?style=flat-square)](https://coveralls.io/github/tiagoporto/json-map-keys-loader)
 [![Mutation testing cover](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Ftiagoporto%2Fjson-map-keys-loader%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/tiagoporto/json-map-keys-loader/master)
 
