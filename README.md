@@ -5,7 +5,6 @@
 </p>
 
 [![Release](https://img.shields.io/npm/v/json-map-keys-loader.svg?style=flat-square&label=release)](https://github.com/tiagoporto/json-map-keys-loader/releases)
-![npm type definitions](https://img.shields.io/npm/types/json-map-keys-loader.svg?style=flat-square)
 [![install size](https://packagephobia.now.sh/badge?p=json-map-keys-loader)](https://packagephobia.now.sh/result?p=json-map-keys-loader)
 [![bundle size](https://img.shields.io/bundlephobia/min/json-map-keys-loader?style=flat-square&label=bundle%20size)](https://bundlephobia.com/result?p=json-map-keys-loader)
 [![License](https://img.shields.io/github/license/tiagoporto/json-map-keys-loader.svg?style=flat-square)](https://github.com/tiagoporto/json-map-keys-loader/blob/master/LICENSE)
