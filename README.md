@@ -24,3 +24,38 @@ Statistics
 [![devDependencies Status](https://img.shields.io/david/dev/tiagoporto/json-map-keys-loader.svg?style=flat-square)](https://david-dm.org/tiagoporto/json-map-keys-loader?type=dev)
 
 > Loader to return path json path keys.
+
+Replace json values with keys
+
+Example:
+
+```
+{ a:
+  { b: "Text Note" }
+}
+```
+
+Will generate
+
+```
+{"a": {"b": "a.b" } }
+```
+
+## Install
+
+```sh
+npm install json-map-keys-loader --save-dev
+```
+
+## Usage
+
+```
+use: [
+    {
+        loader: 'json-map-keys-loader',
+        options: {
+            prefix: '[name]:'
+        }
+    }
+]
+```
