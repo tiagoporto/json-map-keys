@@ -5,12 +5,17 @@
   "scripts": {
     "lint": "",
     "test": "jest",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "npm test -- --coverage",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "postpublish": "npm run tag && git push --tags",
+    "tag": "git tag v$npm_package_version"
   },
   "dependencies": {
     "loader-utils": "^2.0.0"
   },
   "devDependencies": {
+    "coveralls": "^3.1.0",
     "jest": "^26.0.1"
   }
 }
