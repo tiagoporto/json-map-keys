@@ -35,4 +35,10 @@ describe('parse(', () => {
     expect(JSON.stringify(result) === '{"2":{"b":{"c":"2.b.c"}},"a":{"b":"a.b"}}').toBeTruthy()
   })
 
+  it('Should return key to two levels object and prefix', () => {
+    const result = parse({ a: { b: "Text Note" } }, 'prefix:')
+
+    expect(JSON.stringify(result) === '{"a":{"b":"prefix:a.b"}}').toBeTruthy()
+  })
+
 })
