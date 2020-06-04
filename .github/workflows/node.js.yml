@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [10.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -29,7 +29,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - name: Run Unit Tests, generate coverage and publish to coveralls
-      run: npm run test:coverage && npm run coveralls
+    - run: npm run test:coverage && npm run coveralls
     - name: Run Mutation Tests
     - run: npm run test:mutation
 
