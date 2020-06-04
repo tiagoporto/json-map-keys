@@ -23,9 +23,7 @@ Statistics
 [![Dependencies Status](https://img.shields.io/david/tiagoporto/json-map-keys-loader.svg?style=flat-square)](https://david-dm.org/tiagoporto/json-map-keys-loader)
 [![devDependencies Status](https://img.shields.io/david/dev/tiagoporto/json-map-keys-loader.svg?style=flat-square)](https://david-dm.org/tiagoporto/json-map-keys-loader?type=dev)
 
-> Loader to return path json path keys.
-
-Replace json values with keys
+> Webpack loader to replace json values with keys path.
 
 Example:
 
