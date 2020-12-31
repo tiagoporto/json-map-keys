@@ -1,8 +1,8 @@
 {
-  "name": "json-map-keys-parser",
-  "version": "1.0.0",
+  "name": "json-map-keys",
+  "version": "1.0.0-beta.0",
   "description": "Replace json values with the key path.",
-  "homepage": "https://github.com/tiagoporto/json-map-keys/tree/master/packages/json-map-keys-parser#readme",
+  "homepage": "https://github.com/tiagoporto/json-map-keys/tree/master/packages/json-map-keys#readme",
   "keywords": [
     "json",
     "map",
@@ -16,11 +16,12 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/tiagoporto/json-map-keys.git",
-    "directory": "packages/json-map-keys-parser"
+    "directory": "packages/json-map-keys"
   },
   "main": "./index.js",
   "files": [
-    "/dist"
+    "/dist",
+    "/index.js"
   ],
   "license": "MIT"
 }

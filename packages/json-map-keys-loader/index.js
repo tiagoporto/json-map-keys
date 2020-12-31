@@ -1,5 +1,5 @@
 const { getOptions, interpolateName } = require("loader-utils");
-const jsonParser = require("json-map-keys-parser");
+const jsonParser = require("json-map-keys");
 
 function generateMappings(content) {
   const options = getOptions(this);

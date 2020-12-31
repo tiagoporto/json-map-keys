@@ -1,6 +1,6 @@
 {
   "name": "json-map-keys-jest",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.0",
   "description": "Jest transformer to replace json values with the key path.",
   "homepage": "https://github.com/tiagoporto/json-map-keys/tree/master/packages/json-map-keys-jest#readme",
   "keywords": [
@@ -21,12 +21,13 @@
   },
   "main": "./index.js",
   "files": [
-    "/dist"
+    "/dist",
+    "/index.js"
   ],
   "license": "MIT",
   "dependencies": {
     "loader-utils": "^2.0.0",
-    "json-map-keys-parser": "^1.0.0"
+    "json-map-keys": "^1.0.0-beta.0"
   },
   "peerDependencies": {
     "jest": "26.x"

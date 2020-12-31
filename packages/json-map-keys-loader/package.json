@@ -26,7 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "loader-utils": "^2.0.0",
-    "json-map-keys-parser": "^1.0.0"
+    "json-map-keys": "^1.0.0-beta.0"
   },
   "peerDependencies": {
     "webpack": ">= 4.x"

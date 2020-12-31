@@ -1,4 +1,4 @@
-const jsonParser = require("json-map-keys-parser");
+const jsonParser = require("json-map-keys");
 const { interpolateName } = require("loader-utils");
 
 const createTransformer = (userOptions) => {
