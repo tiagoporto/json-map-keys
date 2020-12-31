@@ -1,25 +1,10 @@
 {
-  "name": "json-map-keys-loader",
-  "version": "1.0.0",
-  "description": "Webpack loader to replace json values with the key path.",
-  "homepage": "https://github.com/tiagoporto/json-map-keys-loader",
-  "keywords": [
-    "webpack",
-    "loader",
-    "json",
-    "key",
-    "i18n"
+  "name": "json-map-keys",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
   ],
-  "author": {
-    "name": "Tiago Porto",
-    "url": "http://tiagoporto.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tiagoporto/json-map-keys-loader.git"
-  },
-  "main": "./index.js",
-  "license": "MIT",
   "scripts": {
     "lint": "",
     "test": "jest",
@@ -31,14 +16,11 @@
     "postpublish": "npm run tag && git push --tags",
     "tag": "git tag v$npm_package_version"
   },
-  "dependencies": {
-    "loader-utils": "^2.0.0"
-  },
   "devDependencies": {
-    "@stryker-mutator/core": "^3.2.4",
-    "@stryker-mutator/javascript-mutator": "^3.2.4",
-    "@stryker-mutator/jest-runner": "^3.2.4",
+    "@stryker-mutator/core": "^4.3.1",
+    "@stryker-mutator/javascript-mutator": "^4.0.0",
+    "@stryker-mutator/jest-runner": "^4.3.1",
     "coveralls": "^3.1.0",
-    "jest": "^26.0.1"
+    "jest": "^26.6.3"
   }
 }
