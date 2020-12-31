@@ -2,7 +2,7 @@
   "name": "json-map-keys-parser",
   "version": "1.0.0",
   "description": "Replace json values with the key path.",
-  "homepage": "https://github.com/tiagoporto/json-map-keys/blob/master/package/json-map-keys-parser#readme",
+  "homepage": "https://github.com/tiagoporto/json-map-keys/tree/master/packages/json-map-keys-parser#readme",
   "keywords": [
     "json",
     "map",
