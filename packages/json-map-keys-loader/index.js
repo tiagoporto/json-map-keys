@@ -3,7 +3,7 @@ const jsonParser = require("json-map-keys-parser");
 
 function generateMappings(content) {
   const options = getOptions(this);
-  console.log("this ", this);
+
   let prefix = "";
   if (options.prefix) {
     prefix = interpolateName(this, options.prefix, { content });
