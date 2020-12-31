@@ -105,3 +105,6 @@ dist
 
 # stryker temp files
 .stryker-tmp
+
+
+package/
