@@ -2,7 +2,7 @@
   "name": "json-map-keys-loader",
   "version": "1.0.0",
   "description": "Webpack loader to replace json values with the key path.",
-  "homepage": "https://github.com/tiagoporto/json-map-keys/tree/master/packages/json-map-keys-loader#readme",
+  "homepage": "https://github.com/tiagoporto/json-map-keys/tree/main/packages/json-map-keys-loader#readme",
   "keywords": [
     "webpack",
     "loader",

@@ -4,9 +4,9 @@ node_js:
 # stages:
 #   - Checks
 #   - name: Tests
-#     if: NOT branch = master
+#     if: NOT branch = main
 #   - name: "Tests and Reports"
-#     if: branch = master
+#     if: branch = main
 
 # jobs:
 #   include:
