@@ -1,0 +1,32 @@
+{
+  "name": "rollup-plugin-json-map-keys",
+  "version": "1.0.0-beta.0",
+  "description": "Rollup plugin to replace json values with the key path.",
+  "homepage": "https://github.com/tiagoporto/json-map-keys/tree/main/packages/json-map-keys-rollup#readme",
+  "keywords": [
+    "rollup",
+    "transformer",
+    "json",
+    "key",
+    "i18n"
+  ],
+  "author": {
+    "name": "Tiago Porto",
+    "url": "http://tiagoporto.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiagoporto/json-map-keys.git",
+    "directory": "packages/json-map-keys-rollup"
+  },
+  "main": "./index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@rollup/pluginutils": "^4.1.0",
+    "json-map-keys": "^1.0.0-beta.0",
+    "loader-utils": "^2.0.0"
+  },
+  "peerDependencies": {
+    "rollup": "2.x"
+  }
+}

@@ -19,9 +19,5 @@
     "directory": "packages/json-map-keys"
   },
   "main": "./index.js",
-  "files": [
-    "/dist",
-    "/index.js"
-  ],
   "license": "MIT"
 }
