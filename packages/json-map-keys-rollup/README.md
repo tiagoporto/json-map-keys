@@ -8,7 +8,6 @@
 
 > Rollup plugin to replace json values with the key path.
 
-
 ## Install
 
 ```sh
@@ -17,22 +16,22 @@ npm install rollup-plugin-json-map-keys --save-dev
 
 ## Usage
 
-```
-import jsonMapKeys from 'rollup-plugin-json-map-keys';
+```js
+import jsonMapKeys from "rollup-plugin-json-map-keys";
 
 export default {
-  input: 'src/index.js',
+  input: "src/index.js",
   output: {
-    dir: 'dist',
-    format: 'es'
+    dir: "dist",
+    format: "es",
   },
   plugins: [
-    json({
-        include: [],
-        exclude: [],
-        prefix: '[name]:',
-        compact: false
-    })
-  ]
-}
+    jsonMapKeys({
+      include: [],
+      exclude: [],
+      prefix: "[name]:",
+      compact: false,
+    }),
+  ],
+};
 ```

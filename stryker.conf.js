@@ -8,5 +8,5 @@ module.exports = {
   testRunner: "jest",
   transpilers: [],
   coverageAnalysis: "off",
-  mutate: ['parser.js'],
+  mutate: ["parser.js"],
 };
