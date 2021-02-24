@@ -1,7 +1,7 @@
 # json-map-keys-loader
 
+[![Release](https://img.shields.io/npm/v/json-map-keys-loader.svg?style=flat-square&label=release)](https://github.com/tiagoporto/json-map-keys/releases)
 [![Downloads](https://img.shields.io/npm/dt/json-map-keys-loader.svg?logo=npm&style=flat-square)](https://www.npmjs.com/package/json-map-keys-loader)
-[![Release](https://img.shields.io/npm/v/json-map-keys-loader.svg?style=flat-square&label=release)](https://github.com/tiagoporto/json-map-keys-loader/releases)
 [![install size](https://packagephobia.now.sh/badge?p=json-map-keys-loader)](https://packagephobia.now.sh/result?p=json-map-keys-loader)
 [![bundle size](https://img.shields.io/bundlephobia/min/json-map-keys-loader?style=flat-square&label=bundle%20size)](https://bundlephobia.com/result?p=json-map-keys-loader)
 [![License](https://img.shields.io/github/license/tiagoporto/json-map-keys.svg?style=flat-square)](LICENSE)

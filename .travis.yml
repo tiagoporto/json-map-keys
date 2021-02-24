@@ -11,8 +11,8 @@ stages:
 jobs:
   include:
     - stage: Checks
-      # - script: npm run check-links
-      # name: Check Doc links
+    - script: npm run check-links
+      name: Check Doc links
 
     # - script: npm run check-typing
     #   name: Check Typing
@@ -33,5 +33,5 @@ jobs:
       script: npm run test:coverage && npm run coveralls
       name: Run Unit Tests, generate coverage and publish to coveralls
 
-    # - script: npm run test:mutation-report
-    #   name: Run Mutation Tests and publish reports
+  # - script: npm run test:mutation-report
+  #   name: Run Mutation Tests and publish reports
