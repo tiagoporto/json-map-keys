@@ -13,7 +13,7 @@ jobs:
     - stage: Checks
       script:
         - gem install awesome_bot
-        - awesome_bot *.md --allow-redirect --white-list travis-ci,packagephobia.now
+        - awesome_bot *.md,packages/*.md --allow-redirect --white-list travis-ci,packagephobia.now
       name: Check Doc links
 
     # - script: npm run check-typing
