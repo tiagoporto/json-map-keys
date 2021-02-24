@@ -21,7 +21,7 @@ const mapKeys = (opts) => {
 
       return {
         code: dataToEsm(parsed, {
-          compact: opts.compact,
+          compact: opts && opts.compact,
           namedExports: false,
         }),
         map: { mappings: "" },

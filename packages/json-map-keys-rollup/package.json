@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-json-map-keys",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "Rollup plugin to replace json values with the key path.",
   "homepage": "https://github.com/tiagoporto/json-map-keys/tree/main/packages/json-map-keys-rollup#readme",
   "keywords": [
@@ -23,7 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "@rollup/pluginutils": "^4.1.0",
-    "json-map-keys": "^1.0.0-beta.0",
+    "json-map-keys": "^1.0.0-beta.1",
     "loader-utils": "^2.0.0"
   },
   "peerDependencies": {
