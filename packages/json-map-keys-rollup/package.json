@@ -27,6 +27,6 @@
     "loader-utils": "^2.0.0"
   },
   "peerDependencies": {
-    "rollup": "2.x"
+    "rollup": ">= 2"
   }
 }
