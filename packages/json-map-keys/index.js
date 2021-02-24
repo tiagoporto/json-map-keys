@@ -1,21 +1,25 @@
-function parse(input, prefix = '') {
-  const result = {}
+function parse(input, prefix = "") {
+  const result = {};
   if (!input) {
-    return result
+    return result;
   }
 
-  Object.keys(input).forEach(key => {
-    if (typeof input[key] === 'string') {
-      const keyPrefix = key.split('_')[0]
+  Object.keys(input).forEach((key) => {
+    if (
+      typeof input[key] === "object" &&
+      !Array.isArray(input[key]) &&
+      input[key] !== null
+    ) {
+      result[key] = parse(input[key], `${prefix}${key}.`);
+    } else {
+      const keyPrefix = key.split("_")[0];
 
-      result[key] = `${prefix}${key}`
-      result[keyPrefix] = `${prefix}${keyPrefix}`
-    } else if (typeof input[key] === 'object') {
-      result[key] = parse(input[key], `${prefix}${key}.`)
+      result[key] = `${prefix}${key}`;
+      result[keyPrefix] = `${prefix}${keyPrefix}`;
     }
-  })
+  });
 
-  return result
+  return result;
 }
 
-module.exports = parse
+module.exports = parse;

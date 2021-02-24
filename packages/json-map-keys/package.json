@@ -1,6 +1,6 @@
 {
   "name": "json-map-keys",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "Replace json values with the key path.",
   "homepage": "https://github.com/tiagoporto/json-map-keys/tree/main/packages/json-map-keys#readme",
   "keywords": [
@@ -9,6 +9,7 @@
     "key",
     "i18n"
   ],
+  "main": "./index.js",
   "author": {
     "name": "Tiago Porto",
     "url": "http://tiagoporto.com"
@@ -18,6 +19,5 @@
     "url": "https://github.com/tiagoporto/json-map-keys.git",
     "directory": "packages/json-map-keys"
   },
-  "main": "./index.js",
   "license": "MIT"
 }
