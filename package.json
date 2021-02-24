@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "lint": "",
+    "check-links": "markdown-link-check *.md && markdown-link-check packages/json-map-keys/*.md && markdown-link-check packages/json-map-keys-jest/*.md && markdown-link-check packages/json-map-keys-loader/*.md && markdown-link-check packages/json-map-keys-rollup/*.md",
     "checks": "npm run check-formatting",
     "check-formatting": "prettier --check --ignore-unknown \"**/*\"",
     "fix:formatting": "npm run check-formatting -- --write",
@@ -25,6 +26,7 @@
     "coveralls": "^3.1.0",
     "husky": "^5.1.1",
     "jest": "^26.6.3",
+    "markdown-link-check": "^3.8.6",
     "prettier": "^2.2.1"
   }
 }

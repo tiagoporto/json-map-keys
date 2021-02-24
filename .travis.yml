@@ -3,18 +3,16 @@ node_js:
   - "lts/*"
 stages:
   - Checks
-  # - name: Tests
-  #   if: NOT branch = main
-  # - name: "Tests and Reports"
-  #   if: branch = main
+  - name: Tests
+    if: NOT branch = main
+  - name: "Tests and Reports"
+    if: branch = main
 
 jobs:
   include:
     - stage: Checks
-      script:
-        - gem install awesome_bot
-        - awesome_bot *.md,packages/*.md --allow-redirect --white-list travis-ci,packagephobia.now
-      name: Check Doc links
+      # - script: npm run check-links
+      # name: Check Doc links
 
     # - script: npm run check-typing
     #   name: Check Typing
@@ -25,15 +23,15 @@ jobs:
     # - script: npm run lint
     #   name: Lint
 
-    # - stage: "Tests and Reports"
-    #   script: npm run test:coverage && npm run coveralls
-    #   name: Run Unit Tests, generate coverage and publish to coveralls
-
-    # - script: npm run test:mutation-report
-    #   name: Run Mutation Tests and publish reports
-
-    # - stage: Tests
-    #   name: Run Unit Tests
+    - stage: Tests
+      name: Run Unit Tests
 
     # - script: npm run test:mutation
     #   name: Run Mutation Tests
+
+    - stage: "Tests and Reports"
+      script: npm run test:coverage && npm run coveralls
+      name: Run Unit Tests, generate coverage and publish to coveralls
+
+    # - script: npm run test:mutation-report
+    #   name: Run Mutation Tests and publish reports
