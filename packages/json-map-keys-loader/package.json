@@ -26,6 +26,6 @@
     "loader-utils": "^2.0.0"
   },
   "peerDependencies": {
-    "webpack": ">= 4.x"
+    "webpack": ">= 4"
   }
 }
