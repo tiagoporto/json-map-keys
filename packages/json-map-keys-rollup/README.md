@@ -35,3 +35,7 @@ export default {
   ],
 };
 ```
+
+## License
+
+Rollup Plugin JSON Map Keys © 2021 by Tiago Porto is licensed under [MIT License](LICENSE).

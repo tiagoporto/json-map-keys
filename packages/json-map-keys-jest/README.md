@@ -7,3 +7,7 @@
 [![License](https://img.shields.io/github/license/tiagoporto/json-map-keys.svg?style=flat-square)](LICENSE)
 
 > Jest transformer to replace json values with the key path.
+
+## License
+
+JSON Map Keys Jest © 2020 by Tiago Porto is licensed under [MIT License](LICENSE).

@@ -40,3 +40,7 @@ use: [
     }
 ]
 ```
+
+## License
+
+JSON Map Keys Loader © 2020 by Tiago Porto is licensed under [MIT License](LICENSE).

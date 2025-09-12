@@ -7,3 +7,7 @@
 [![License](https://img.shields.io/github/license/tiagoporto/json-map-keys.svg?style=flat-square)](LICENSE)
 
 > Replace json values with the key path.
+
+## License
+
+JSON Map Keys © 2020 by Tiago Porto is licensed under [MIT License](LICENSE).
