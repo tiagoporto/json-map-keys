@@ -1,5 +1,5 @@
 {
   // See https://go.microsoft.com/fwlink/?LinkId=827846
   // for the documentation about the extensions.json format
-  "recommendations": ["EditorConfig.EditorConfig"]
+  "recommendations": ["EditorConfig.EditorConfig", "esbenp.prettier-vscode"]
 }

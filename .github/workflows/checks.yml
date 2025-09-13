@@ -1,0 +1,57 @@
+name: Checks
+
+on:
+  workflow_call:
+  push:
+    branches: [main]
+  pull_request:
+    types:
+      - opened # PR was open
+      - synchronize # PR was updated
+      - reopened # PR was closed and is now open again
+      - ready_for_review # PR was converted from draft to open
+      - converted_to_draft # PR was converted from open to draft
+
+concurrency:
+  group: checks_${{ github.workflow }}_${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install Dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Formatting Check
+        run: npm run formatting:check
+
+      # - name: Typecheck
+      #   if: success() || failure()
+      #   run: npm run typecheck
+
+      # - name: Lint Styles
+      #   if: success() || failure()
+      #   run: npm run lint:styles
+
+      # - name: Lint
+      #   if: success() || failure()
+      #   run: npm run lint
+
+      # - name: Pack Libs
+      #   if: success() || failure()
+      #   run: |
+      #     npm pack --recursive

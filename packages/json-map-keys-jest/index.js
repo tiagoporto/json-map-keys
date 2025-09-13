@@ -1,5 +1,5 @@
-const jsonParser = require("json-map-keys");
-const { interpolateName } = require("loader-utils");
+const jsonParser = require('json-map-keys')
+const { interpolateName } = require('loader-utils')
 
 const createTransformer = (userOptions) => {
   return {
@@ -9,24 +9,24 @@ const createTransformer = (userOptions) => {
     // },
 
     process(sourceText, sourcePath) {
-      let prefix = "";
+      let prefix = ''
       if (userOptions && userOptions.prefix) {
         prefix = interpolateName(
           { resourcePath: sourcePath },
           userOptions.prefix,
           {
             sourceText,
-          }
-        );
+          },
+        )
       }
-      const resources = jsonParser(JSON.parse(sourceText), prefix);
+      const resources = jsonParser(JSON.parse(sourceText), prefix)
 
-      return JSON.stringify(resources);
+      return JSON.stringify(resources)
     },
-  };
-};
+  }
+}
 
 module.exports = {
   ...createTransformer(),
   createTransformer,
-};
+}
