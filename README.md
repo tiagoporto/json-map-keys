@@ -1,11 +1,5 @@
 # json-map-keys ![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg)
 
-<!--## ✅ Status
-
-[![Build Status](https://img.shields.io/travis/com/tiagoporto/json-map-keys/main.svg?label=tests&logo=travis&style=flat-square)](https://travis-ci.com/tiagoporto/json-map-keys)
-[![Coverage Status](https://img.shields.io/coveralls/tiagoporto/json-map-keys.svg?logo=coveralls&style=flat-square)](https://coveralls.io/github/tiagoporto/json-map-keys)
-[![Mutation testing cover](https://img.shields.io/endpoint?style=flat-square&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Ftiagoporto%2Fjson-map-keys%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/tiagoporto/json-map-keys/main) -->
-
 Replace json values with the key path.
 
 Example:
@@ -21,6 +15,14 @@ Will generate
 ```
 {"a": {"b": "a.b" } }
 ```
+
+## ✅ Status
+
+<!-- [![Docs GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/accessibility-buttons/check-docs.yml?branch=main&label=docs&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/accessibility-buttons/actions/workflows/check-docs.yml?query=branch%3Amain) -->
+
+[![Checks GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/json-map-keys/checks.yml?branch=main&label=checks&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/json-map-keys/actions/workflows/checks.yml?query=branch%3Amain)
+[![Tests GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/json-map-keys/unit-tests.yml?branch=main&label=unit%20tests&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/json-map-keys/actions/workflows/unit-tests.yml?query=branch%3Amain)
+[![Coverage Status](https://img.shields.io/coverallsCoverage/github/tiagoporto/json-map-keys.svg?logo=coveralls&style=flat-square)](https://coveralls.io/github/tiagoporto/json-map-keys)
 
 ## 📦 Packages
 
