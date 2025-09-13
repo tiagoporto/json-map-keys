@@ -1,3 +1,3 @@
 export default {
-  "*": "prettier --check --ignore-unknown --write",
-};
+  '*': 'prettier --check --ignore-unknown --write',
+}

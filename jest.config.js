@@ -1,3 +1,3 @@
 module.exports = {
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
-};
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+}

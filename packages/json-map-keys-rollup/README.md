@@ -17,23 +17,23 @@ npm install rollup-plugin-json-map-keys --save-dev
 ## Usage
 
 ```js
-import jsonMapKeys from "rollup-plugin-json-map-keys";
+import jsonMapKeys from 'rollup-plugin-json-map-keys'
 
 export default {
-  input: "src/index.js",
+  input: 'src/index.js',
   output: {
-    dir: "dist",
-    format: "es",
+    dir: 'dist',
+    format: 'es'
   },
   plugins: [
     jsonMapKeys({
       include: [],
       exclude: [],
-      prefix: "[name]:",
-      compact: false,
-    }),
-  ],
-};
+      prefix: '[name]:',
+      compact: false
+    })
+  ]
+}
 ```
 
 ## License
