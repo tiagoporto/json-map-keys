@@ -13,9 +13,9 @@
     "checks": "npm run format:check",
     "format:check": "prettier --check --ignore-unknown \"**/*\"",
     "format": "npm run format:check -- --write",
+    "coverage": "npm test -- --coverage",
     "test": "jest",
     "test:watch": "npm test -- --watch",
-    "test:coverage": "npm test -- --coverage",
     "test:mutation": "stryker run",
     "test:mutation-report": "stryker run --reporters dashboard"
   },
