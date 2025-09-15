@@ -4,22 +4,27 @@ Replace json values with the key path.
 
 Example:
 
-```
-{ a:
-  { b: "Text Note" }
+```json
+{
+  "a": {
+    "b": "Text Note"
+  }
 }
 ```
 
 Will generate
 
-```
-{"a": {"b": "a.b" } }
+```json
+{
+  "a": {
+    "b": "a.b"
+  }
+}
 ```
 
 ## ✅ Status
 
-<!-- [![Docs GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/accessibility-buttons/check-docs.yml?branch=main&label=docs&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/accessibility-buttons/actions/workflows/check-docs.yml?query=branch%3Amain) -->
-
+[![Docs GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/json-map-keys/check-docs.yml?branch=main&label=docs&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/json-map-keys/actions/workflows/check-docs.yml?query=branch%3Amain)
 [![Checks GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/json-map-keys/checks.yml?branch=main&label=checks&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/json-map-keys/actions/workflows/checks.yml?query=branch%3Amain)
 [![Tests GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/json-map-keys/unit-tests.yml?branch=main&label=unit%20tests&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/json-map-keys/actions/workflows/unit-tests.yml?query=branch%3Amain)
 [![Coverage Status](https://img.shields.io/coverallsCoverage/github/tiagoporto/json-map-keys.svg?logo=coveralls&style=flat-square)](https://coveralls.io/github/tiagoporto/json-map-keys)
@@ -30,7 +35,7 @@ Will generate
 - [json-map-keys](./packages/json-map-keys/README.md)
 - [json-map-keys-jest](./packages/json-map-keys-jest/README.md)
 - [json-map-keys-loader](./packages/json-map-keys-loader/README.md)
-- [rollup-plugin-json-map-keys](./packages/rollup-plugin-json-map-keys/README.md)
+- [rollup-plugin-json-map-keys](./packages/json-map-keys-rollup/README.md)
 
 ### json-map-keys
 

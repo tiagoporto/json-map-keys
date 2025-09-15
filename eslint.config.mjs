@@ -5,7 +5,7 @@ import globals from 'globals'
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   {
-    ignores: ['coverage/**', '**/dist/'],
+    ignores: ['coverage/**', 'reports/**', '**/dist/'],
   },
   { languageOptions: { globals: globals.node } },
   ...tpConfig.configs.base,
