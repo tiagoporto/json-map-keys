@@ -17,15 +17,12 @@
     "lint:fix": "npm run lint -- --fix",
     "coverage": "vitest run --coverage",
     "test": "vitest",
-    "test:mutation": "stryker run",
-    "test:mutation-report": "stryker run --reporters dashboard"
+    "test:mutation": "stryker run"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@stryker-mutator/core": "^4.3.1",
-    "@stryker-mutator/javascript-mutator": "^4.0.0",
-    "@stryker-mutator/jest-runner": "^4.3.1",
+    "@stryker-mutator/vitest-runner": "^9.1.1",
     "@tiagoporto/dependabot-config": "^2.0.0",
     "@tiagoporto/editor-config": "^2.0.0",
     "@tiagoporto/eslint-config": "^4.8.0",

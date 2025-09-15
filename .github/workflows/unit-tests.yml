@@ -43,11 +43,11 @@ jobs:
         uses: coverallsapp/github-action@648a8eb78e6d50909eff900e4ec85cab4524a45b
         if: github.event_name != 'workflow_call'
 
-      # - name: Run Mutation Tests and Publish to Dashboard
-      #   if: github.event_name != 'workflow_call' && github.event_name != 'pull_request'
-      #   env:
-      #     STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
-      #   run: pnpm test:mutation
+      - name: Run Mutation Tests and Publish to Dashboard
+        if: github.event_name != 'workflow_call' && github.event_name != 'pull_request'
+        env:
+          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
+        run: npm run test:mutation
 
       # - name: Run Unit Test Against Package
       #   # pnpm has a bug with pack script https://github.com/pnpm/pnpm/issues/4351
