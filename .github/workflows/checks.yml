@@ -47,9 +47,9 @@ jobs:
       #   if: success() || failure()
       #   run: npm run lint:styles
 
-      # - name: Lint
-      #   if: success() || failure()
-      #   run: npm run lint
+      - name: Lint
+        if: success() || failure()
+        run: npm run lint
 
       # - name: Pack Libs
       #   if: success() || failure()

@@ -1,68 +1,91 @@
-import mapKeys from '.'
 import { describe, expect, it } from 'vitest'
 
-describe('mapKeys', () => {
-  it('Should return empty object', () => {
+import mapKeys from '.'
+
+describe('json map keys', () => {
+  it('should return empty object', () => {
+    expect.assertions(1)
+
     const result = mapKeys('')
 
-    expect(JSON.stringify(result) === '{}').toBeTruthy()
+    expect(result).toStrictEqual({})
   })
 
-  it('Should return key to one level object', () => {
+  it('should return key to one level object', () => {
+    expect.assertions(1)
+
     const result = mapKeys({ a: 'Text note' })
 
-    expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
+    expect(result).toStrictEqual({ a: 'a' })
   })
 
-  it('Should return key to false', () => {
+  it('should return key to false', () => {
+    expect.assertions(1)
+
     const result = mapKeys({ a: false })
 
-    expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
+    expect(result).toStrictEqual({ a: 'a' })
   })
 
-  it('Should return key to true', () => {
+  it('should return key to true', () => {
+    expect.assertions(1)
+
     const result = mapKeys({ a: true })
 
-    expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
+    expect(result).toStrictEqual({ a: 'a' })
   })
 
-  it('Should return key to number', () => {
-    const result = mapKeys({ a: true })
+  it('should return key to number', () => {
+    expect.assertions(1)
 
-    expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
+    const result = mapKeys({ a: 3 })
+
+    expect(result).toStrictEqual({ a: 'a' })
   })
 
-  it('Should return key to array', () => {
-    const result = mapKeys({ a: [0, 1] })
+  it('should return key to array', () => {
+    expect.assertions(1)
 
-    expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
+    const result = mapKeys({ b: [0, 1] })
+
+    expect(result).toStrictEqual({ b: 'b' })
   })
 
-  it('Should return key to null', () => {
+  it('should return key to null', () => {
+    expect.assertions(1)
+
     const result = mapKeys({ a: null })
 
-    expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
+    expect(result).toStrictEqual({ a: 'a' })
   })
 
-  it('Should return key to function', () => {
+  it('should return key to function', () => {
+    expect.assertions(1)
+
     const result = mapKeys({ a: () => {} })
 
-    expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
+    expect(result).toStrictEqual({ a: 'a' })
   })
 
-  it('Should return key to undefined', () => {
+  it('should return key to undefined', () => {
+    expect.assertions(1)
+
     const result = mapKeys({ a: undefined })
 
-    expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
+    expect(result).toStrictEqual({ a: 'a' })
   })
 
-  it('Should return key to two levels object', () => {
+  it('should return key to two levels object', () => {
+    expect.assertions(1)
+
     const result = mapKeys({ a: { b: 'Text Note' } })
 
-    expect(JSON.stringify(result) === '{"a":{"b":"a.b"}}').toBeTruthy()
+    expect(result).toStrictEqual({ a: { b: 'a.b' } })
   })
 
-  it('Should return key to multiple levels object', () => {
+  it('should return key to multiple levels object', () => {
+    expect.assertions(1)
+
     const result = mapKeys({
       a: {
         b: 'Text Note',
@@ -74,14 +97,14 @@ describe('mapKeys', () => {
       },
     })
 
-    expect(
-      JSON.stringify(result) === '{"2":{"b":{"c":"2.b.c"}},"a":{"b":"a.b"}}',
-    ).toBeTruthy()
+    expect(result).toStrictEqual({ 2: { b: { c: '2.b.c' } }, a: { b: 'a.b' } })
   })
 
-  it('Should return key to two levels object and prefix', () => {
+  it('should return key to two levels object and prefix', () => {
+    expect.assertions(1)
+
     const result = mapKeys({ a: { b: 'Text Note' } }, 'prefix:')
 
-    expect(JSON.stringify(result) === '{"a":{"b":"prefix:a.b"}}').toBeTruthy()
+    expect(result).toStrictEqual({ a: { b: 'prefix:a.b' } })
   })
 })

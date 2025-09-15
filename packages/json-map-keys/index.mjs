@@ -4,7 +4,7 @@ const parse = (input, prefix = '') => {
     return result
   }
 
-  Object.keys(input).forEach((key) => {
+  for (const key of Object.keys(input)) {
     if (
       typeof input[key] === 'object' &&
       !Array.isArray(input[key]) &&
@@ -17,7 +17,7 @@ const parse = (input, prefix = '') => {
       result[key] = `${prefix}${key}`
       result[keyPrefix] = `${prefix}${keyPrefix}`
     }
-  })
+  }
 
   return result
 }

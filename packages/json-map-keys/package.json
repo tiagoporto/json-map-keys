@@ -23,5 +23,11 @@
     "url": "https://github.com/tiagoporto/json-map-keys.git",
     "directory": "packages/json-map-keys"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "index.mjs"
+  ],
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
 }
