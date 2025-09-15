@@ -1,68 +1,69 @@
-const parse = require('.')
+import mapKeys from '.'
+import { describe, expect, it } from 'vitest'
 
-describe('parse(', () => {
+describe('mapKeys', () => {
   it('Should return empty object', () => {
-    const result = parse('')
+    const result = mapKeys('')
 
     expect(JSON.stringify(result) === '{}').toBeTruthy()
   })
 
   it('Should return key to one level object', () => {
-    const result = parse({ a: 'Text note' })
+    const result = mapKeys({ a: 'Text note' })
 
     expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
   })
 
   it('Should return key to false', () => {
-    const result = parse({ a: false })
+    const result = mapKeys({ a: false })
 
     expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
   })
 
   it('Should return key to true', () => {
-    const result = parse({ a: true })
+    const result = mapKeys({ a: true })
 
     expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
   })
 
   it('Should return key to number', () => {
-    const result = parse({ a: true })
+    const result = mapKeys({ a: true })
 
     expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
   })
 
   it('Should return key to array', () => {
-    const result = parse({ a: [0, 1] })
+    const result = mapKeys({ a: [0, 1] })
 
     expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
   })
 
   it('Should return key to null', () => {
-    const result = parse({ a: null })
+    const result = mapKeys({ a: null })
 
     expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
   })
 
   it('Should return key to function', () => {
-    const result = parse({ a: () => {} })
+    const result = mapKeys({ a: () => {} })
 
     expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
   })
 
   it('Should return key to undefined', () => {
-    const result = parse({ a: undefined })
+    const result = mapKeys({ a: undefined })
 
     expect(JSON.stringify(result) === '{"a":"a"}').toBeTruthy()
   })
 
   it('Should return key to two levels object', () => {
-    const result = parse({ a: { b: 'Text Note' } })
+    const result = mapKeys({ a: { b: 'Text Note' } })
 
     expect(JSON.stringify(result) === '{"a":{"b":"a.b"}}').toBeTruthy()
   })
 
   it('Should return key to multiple levels object', () => {
-    const result = parse({
+    const result = mapKeys({
       a: {
         b: 'Text Note',
       },
@@ -79,7 +80,7 @@ describe('parse(', () => {
   })
 
   it('Should return key to two levels object and prefix', () => {
-    const result = parse({ a: { b: 'Text Note' } }, 'prefix:')
+    const result = mapKeys({ a: { b: 'Text Note' } }, 'prefix:')
 
     expect(JSON.stringify(result) === '{"a":{"b":"prefix:a.b"}}').toBeTruthy()
   })
