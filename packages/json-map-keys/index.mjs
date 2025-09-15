@@ -1,4 +1,4 @@
-function parse(input, prefix = '') {
+const parse = (input, prefix = '') => {
   const result = {}
   if (!input) {
     return result
@@ -22,4 +22,4 @@ function parse(input, prefix = '') {
   return result
 }
 
-module.exports = parse
+export default parse
