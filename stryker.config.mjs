@@ -1,10 +1,12 @@
+import { env } from 'node:process'
+
 // @ts-check
 /** @type {import('@stryker-mutator/api/core').PartialStrykerOptions} */
 const config = {
   _comment:
     "This config was generated using 'stryker init'. Please take a look at: https://stryker-mutator.io/docs/stryker-js/configuration/ for more information.",
   mutate: ['packages/**/*.{js,mjs}', '!packages/**/*.test.js'],
-  reporters: process.env.CI ? ['dashboard'] : ['html'],
+  reporters: env.CI ? ['dashboard'] : ['html'],
   packageManager: 'npm',
   testRunner: 'vitest',
   testRunner_comment:
