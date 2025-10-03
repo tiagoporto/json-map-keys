@@ -9,14 +9,14 @@ updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: monthly
-      day: monday
-      time: '01:00'
+      interval: cron
+      # bimonthly on Mondays at 01:00
+      cronjob: 0 1 * FEB,APR,JUN,AUG,OCT,DEC MON
       # UTC -03:00
       timezone: America/Sao_Paulo
     labels:
       - dependencies
-    open-pull-requests-limit: 1
+    open-pull-requests-limit: 3
     versioning-strategy: auto
     commit-message:
       prefix: chore

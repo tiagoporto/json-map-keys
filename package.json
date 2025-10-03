@@ -22,7 +22,7 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@stryker-mutator/vitest-runner": "^9.1.1",
-    "@tiagoporto/dependabot-config": "^2.0.0",
+    "@tiagoporto/dependabot-config": "^2.4.0",
     "@tiagoporto/editor-config": "^2.0.0",
     "@tiagoporto/eslint-config": "^4.8.0",
     "@tiagoporto/prettier-config": "^2.1.0",
