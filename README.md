@@ -27,7 +27,7 @@ Will generate
 [![Docs GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/json-map-keys/check-docs.yml?branch=main&label=docs&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/json-map-keys/actions/workflows/check-docs.yml?query=branch%3Amain)
 [![Checks GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/json-map-keys/checks.yml?branch=main&label=checks&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/json-map-keys/actions/workflows/checks.yml?query=branch%3Amain)
 [![Tests GA Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/json-map-keys/unit-tests.yml?branch=main&label=unit%20tests&logo=githubactions&logoColor=white&style=flat-square)](https://github.com/tiagoporto/json-map-keys/actions/workflows/unit-tests.yml?query=branch%3Amain)
-[![Coverage Status](https://img.shields.io/coverallsCoverage/github/tiagoporto/json-map-keys.svg?logo=coveralls&style=flat-square)](https://coveralls.io/github/tiagoporto/json-map-keys)
+[![Coverage Status](https://img.shields.io/codecov/c/github/tiagoporto/json-map-keys/main?logo=codecov&style=flat-square)](https://app.codecov.io/github/tiagoporto/json-map-keys)
 [![Mutation Score](https://img.shields.io/endpoint?style=flat-square&url=https://badge-api.stryker-mutator.io/github.com/tiagoporto/json-map-keys/main)](https://dashboard.stryker-mutator.io/reports/github.com/tiagoporto/json-map-keys/main)
 
 ## 📦 Packages
