@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
-    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/config-conventional": "^20.0.0",
     "@stryker-mutator/core": "^9.1.1",
     "@stryker-mutator/vitest-runner": "^9.1.1",
     "@tiagoporto/dependabot-config": "^2.4.0",
