@@ -1,17 +1,26 @@
+// https://stryker-mutator.io/docs/stryker-js/configuration/
 import { env } from 'node:process'
 
-// @ts-check
 /** @type {import('@stryker-mutator/api/core').PartialStrykerOptions} */
 const config = {
-  _comment:
-    "This config was generated using 'stryker init'. Please take a look at: https://stryker-mutator.io/docs/stryker-js/configuration/ for more information.",
-  mutate: ['packages/**/*.{js,mjs}', '!packages/**/*.test.js'],
+  mutate: [
+    'packages/**/*.{js,mjs,ts}',
+    '!packages/**/*.test.{js,mjs,ts}',
+    '!packages/**/dist/**',
+    '!**/rollup.config.mjs',
+  ],
   reporters: env.CI ? ['dashboard'] : ['html'],
   packageManager: 'pnpm',
-  testRunner: 'vitest',
-  testRunner_comment:
-    'Take a look at https://stryker-mutator.io/docs/stryker-js/vitest-runner for information about the vitest plugin.',
   coverageAnalysis: 'perTest',
-  plugins: ['@stryker-mutator/vitest-runner'],
+  testRunner: 'vitest',
+  plugins: [
+    '@stryker-mutator/vitest-runner',
+    '@stryker-mutator/typescript-checker',
+  ],
+  checkers: ['typescript'],
+  tsconfigFile: 'tsconfig.json',
+  typescriptChecker: {
+    prioritizePerformanceOverAccuracy: true,
+  },
 }
 export default config
