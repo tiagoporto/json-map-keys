@@ -7,10 +7,11 @@ const config = {
     "This config was generated using 'stryker init'. Please take a look at: https://stryker-mutator.io/docs/stryker-js/configuration/ for more information.",
   mutate: ['packages/**/*.{js,mjs}', '!packages/**/*.test.js'],
   reporters: env.CI ? ['dashboard'] : ['html'],
-  packageManager: 'npm',
+  packageManager: 'pnpm',
   testRunner: 'vitest',
   testRunner_comment:
     'Take a look at https://stryker-mutator.io/docs/stryker-js/vitest-runner for information about the vitest plugin.',
   coverageAnalysis: 'perTest',
+  plugins: ['@stryker-mutator/vitest-runner'],
 }
 export default config

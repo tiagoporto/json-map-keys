@@ -2,18 +2,22 @@
   "name": "json-map-keys",
   "private": true,
   "type": "module",
-  "workspaces": [
-    "packages/*"
-  ],
+  "engines": {
+    "node": ">=23",
+    "npm": "uses pnpm",
+    "pnpm": ">=10"
+  },
+  "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977",
   "scripts": {
     "prepare": "husky",
+    "preinstall": "npx only-allow pnpm",
     "postinstall": "$CI = true || (dependabot-config && editor-config)",
     "check-docs": "remark --frail . --ext md,markdown,mdx",
-    "checks": "npm run format:check && npm run lint",
-    "format": "npm run format:check -- --write",
+    "checks": "pnpm check-docs && pnpm format:check && pnpm lint",
+    "format": "pnpm format:check --write",
     "format:check": "prettier --check --ignore-unknown \"**/*\"",
     "lint": "eslint --max-warnings 0",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "pnpm lint --fix",
     "coverage": "vitest run --coverage",
     "test": "vitest",
     "test:mutation": "stryker run"
@@ -21,6 +25,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
+    "@stryker-mutator/core": "^9.1.1",
     "@stryker-mutator/vitest-runner": "^9.1.1",
     "@tiagoporto/dependabot-config": "^2.4.0",
     "@tiagoporto/editor-config": "^2.0.0",
