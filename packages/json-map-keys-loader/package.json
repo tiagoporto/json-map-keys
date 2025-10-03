@@ -10,17 +10,15 @@
     "key",
     "i18n"
   ],
-  "author": {
-    "name": "Tiago Porto",
-    "url": "http://tiagoporto.com"
-  },
+  "author": "Tiago Porto (https://tiagoporto.com)",
   "repository": {
     "type": "git",
     "url": "https://github.com/tiagoporto/json-map-keys.git",
     "directory": "packages/json-map-keys-loader"
   },
-  "main": "./index.js",
+  "funding": "https://github.com/sponsors/tiagoporto",
   "license": "MIT",
+  "main": "./index.js",
   "dependencies": {
     "json-map-keys": "^1.0.0-beta.1",
     "loader-utils": "^2.0.0"
