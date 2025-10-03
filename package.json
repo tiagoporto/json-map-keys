@@ -20,14 +20,19 @@
     "lint:fix": "pnpm lint --fix",
     "coverage": "vitest run --coverage",
     "test": "vitest",
-    "test:mutation": "stryker run"
+    "test:mutation": "stryker run",
+    "webpack-loader": "webpack"
+  },
+  "dependencies": {
+    "json-map-keys": "workspace:*",
+    "json-map-keys-loader": "workspace:*"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^20.0.0",
     "@stryker-mutator/core": "^9.1.1",
-    "@stryker-mutator/vitest-runner": "^9.1.1",
     "@stryker-mutator/typescript-checker": "^9.1.1",
+    "@stryker-mutator/vitest-runner": "^9.1.1",
     "@tiagoporto/dependabot-config": "^2.4.0",
     "@tiagoporto/editor-config": "^2.0.0",
     "@tiagoporto/eslint-config": "^5.3.0",
@@ -41,6 +46,8 @@
     "prettier": "^3.6.2",
     "remark": "^15.0.1",
     "remark-cli": "^12.0.1",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "webpack": "^5.102.0",
+    "webpack-cli": "^6.0.1"
   }
 }
