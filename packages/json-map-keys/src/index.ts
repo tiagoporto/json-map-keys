@@ -1,5 +1,7 @@
-const parse = (input, prefix = '') => {
-  const result = {}
+type Json = Record<string, unknown>
+
+export const jsonMapKeys = (input: Json, prefix = '') => {
+  const result: Json = {}
   if (!input) {
     return result
   }
@@ -10,7 +12,7 @@ const parse = (input, prefix = '') => {
       !Array.isArray(input[key]) &&
       input[key] !== null
     ) {
-      result[key] = parse(input[key], `${prefix}${key}.`)
+      result[key] = jsonMapKeys(input[key] as Json, `${prefix}${key}.`)
     } else {
       const keyPrefix = key.split('_')[0]
 
@@ -21,5 +23,3 @@ const parse = (input, prefix = '') => {
 
   return result
 }
-
-export default parse

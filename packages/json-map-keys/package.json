@@ -10,11 +10,7 @@
     "key",
     "replace-values"
   ],
-  "main": "./index.mjs",
-  "author": {
-    "name": "Tiago Porto",
-    "url": "http://tiagoporto.com"
-  },
+  "author": "Tiago Porto (https://tiagoporto.com)",
   "engines": {
     "node": ">=18"
   },
@@ -23,11 +19,23 @@
     "url": "https://github.com/tiagoporto/json-map-keys.git",
     "directory": "packages/json-map-keys"
   },
+  "funding": "https://github.com/sponsors/tiagoporto",
   "license": "MIT",
+  "main": "./src/index.ts",
+  "publishConfig": {
+    "main": "./dist/index.js"
+  },
   "files": [
     "index.mjs"
   ],
+  "scripts": {
+    "prepack": "pnpm build",
+    "build": "rm -rf dist && rollup --config"
+  },
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rollup": "^4.52.4",
     "vitest": "^3.2.4"
   }
 }

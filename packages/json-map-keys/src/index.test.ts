@@ -1,12 +1,13 @@
 import { describe, expect, it } from 'vitest'
 
-import mapKeys from '.'
+import { jsonMapKeys } from '.'
 
 describe('json map keys', () => {
   it('should return empty object', () => {
     expect.assertions(1)
 
-    const result = mapKeys('')
+    // @ts-expect-error: invalid value
+    const result = jsonMapKeys('')
 
     expect(result).toStrictEqual({})
   })
@@ -14,7 +15,7 @@ describe('json map keys', () => {
   it('should return key to one level object', () => {
     expect.assertions(1)
 
-    const result = mapKeys({ a: 'Text note' })
+    const result = jsonMapKeys({ a: 'Text note' })
 
     expect(result).toStrictEqual({ a: 'a' })
   })
@@ -22,7 +23,7 @@ describe('json map keys', () => {
   it('should return key to false', () => {
     expect.assertions(1)
 
-    const result = mapKeys({ a: false })
+    const result = jsonMapKeys({ a: false })
 
     expect(result).toStrictEqual({ a: 'a' })
   })
@@ -30,7 +31,7 @@ describe('json map keys', () => {
   it('should return key to true', () => {
     expect.assertions(1)
 
-    const result = mapKeys({ a: true })
+    const result = jsonMapKeys({ a: true })
 
     expect(result).toStrictEqual({ a: 'a' })
   })
@@ -38,7 +39,7 @@ describe('json map keys', () => {
   it('should return key to number', () => {
     expect.assertions(1)
 
-    const result = mapKeys({ a: 3 })
+    const result = jsonMapKeys({ a: 3 })
 
     expect(result).toStrictEqual({ a: 'a' })
   })
@@ -46,7 +47,7 @@ describe('json map keys', () => {
   it('should return key to array', () => {
     expect.assertions(1)
 
-    const result = mapKeys({ b: [0, 1] })
+    const result = jsonMapKeys({ b: [0, 1] })
 
     expect(result).toStrictEqual({ b: 'b' })
   })
@@ -54,7 +55,7 @@ describe('json map keys', () => {
   it('should return key to null', () => {
     expect.assertions(1)
 
-    const result = mapKeys({ a: null })
+    const result = jsonMapKeys({ a: null })
 
     expect(result).toStrictEqual({ a: 'a' })
   })
@@ -62,7 +63,8 @@ describe('json map keys', () => {
   it('should return key to function', () => {
     expect.assertions(1)
 
-    const result = mapKeys({ a: () => {} })
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
+    const result = jsonMapKeys({ a: () => {} })
 
     expect(result).toStrictEqual({ a: 'a' })
   })
@@ -70,7 +72,7 @@ describe('json map keys', () => {
   it('should return key to undefined', () => {
     expect.assertions(1)
 
-    const result = mapKeys({ a: undefined })
+    const result = jsonMapKeys({ a: undefined })
 
     expect(result).toStrictEqual({ a: 'a' })
   })
@@ -78,7 +80,7 @@ describe('json map keys', () => {
   it('should return key to two levels object', () => {
     expect.assertions(1)
 
-    const result = mapKeys({ a: { b: 'Text Note' } })
+    const result = jsonMapKeys({ a: { b: 'Text Note' } })
 
     expect(result).toStrictEqual({ a: { b: 'a.b' } })
   })
@@ -86,7 +88,7 @@ describe('json map keys', () => {
   it('should return key to multiple levels object', () => {
     expect.assertions(1)
 
-    const result = mapKeys({
+    const result = jsonMapKeys({
       a: {
         b: 'Text Note',
       },
@@ -103,7 +105,7 @@ describe('json map keys', () => {
   it('should return key to two levels object and prefix', () => {
     expect.assertions(1)
 
-    const result = mapKeys({ a: { b: 'Text Note' } }, 'prefix:')
+    const result = jsonMapKeys({ a: { b: 'Text Note' } }, 'prefix:')
 
     expect(result).toStrictEqual({ a: { b: 'prefix:a.b' } })
   })
