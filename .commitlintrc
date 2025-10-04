@@ -8,9 +8,9 @@
       "always",
       [
         "json-map-keys",
-        "jest",
         "loader",
         "rollup"
+        "jest-transformer",
       ]
     ]
   }
