@@ -1,6 +1,6 @@
 {
   "name": "json-map-keys",
-  "version": "1.0.0-beta.1",
+  "version": "0.0.0-development",
   "type": "module",
   "description": "Replace json values with the key path.",
   "homepage": "https://github.com/tiagoporto/json-map-keys/tree/main/packages/json-map-keys#readme",
@@ -30,7 +30,9 @@
   ],
   "scripts": {
     "prepack": "pnpm build",
-    "build": "rm -rf dist && rollup --config"
+    "build": "rm -rf dist && rollup --config",
+    "release": "semantic-release",
+    "release:dry-run": "semantic-release --dry-run"
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
