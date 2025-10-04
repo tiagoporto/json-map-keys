@@ -1,6 +1,6 @@
 # json-map-keys-loader
 
-> Webpack loader to replace json values with the keys path.
+Webpack loader to replace json values with the keys path.
 
 Example:
 
