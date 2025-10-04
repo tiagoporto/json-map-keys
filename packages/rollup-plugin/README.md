@@ -1,6 +1,26 @@
 # rollup-plugin-json-map-keys
 
-> Rollup plugin to replace json values with the key path.
+Rollup plugin to replace json values with the keys path.
+
+Example:
+
+```json
+{
+  "a": {
+    "b": "Text Note"
+  }
+}
+```
+
+Will generate
+
+```json
+{
+  "a": {
+    "b": "a.b"
+  }
+}
+```
 
 ## Install
 
