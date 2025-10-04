@@ -62,6 +62,9 @@ jobs:
       - name: Test webpack loader
         run: pnpm webpack-loader
 
+      - name: Test rollup plugin
+        run: pnpm rollup-plugin
+
       # - name: Run Unit Test Against Package
       #   # pnpm has a bug with pack script https://github.com/pnpm/pnpm/issues/4351
       #   run: |
