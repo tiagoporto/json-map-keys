@@ -1,4 +1,4 @@
-import jsonParser from 'json-map-keys'
+import jsonMapKeys from 'json-map-keys'
 import { interpolateName } from 'loader-utils'
 
 export default function generateMappings(content) {
@@ -8,7 +8,7 @@ export default function generateMappings(content) {
   if (options.prefix) {
     prefix = interpolateName(this, options.prefix, { content })
   }
-  const resources = jsonParser(JSON.parse(content), prefix)
+  const resources = jsonMapKeys(JSON.parse(content), prefix)
 
   return JSON.stringify(resources)
 }

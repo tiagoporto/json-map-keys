@@ -21,10 +21,7 @@ export default {
   },
   plugins: [
     jsonMapKeys({
-      include: [],
-      exclude: [],
-      prefix: '[name]:',
-      compact: false
+      prefix: '[name]:'
     })
   ]
 }
