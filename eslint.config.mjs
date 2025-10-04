@@ -6,6 +6,7 @@ export default [
   ...tpConfig.configs.base,
   {
     files: ['**/*.test.{js,ts}'],
+    ignores: ['fixtures/**/*'],
     plugins: { vitest },
     rules: {
       ...vitest.configs.all.rules,

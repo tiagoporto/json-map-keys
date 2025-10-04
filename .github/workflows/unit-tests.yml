@@ -65,6 +65,9 @@ jobs:
       - name: Test rollup plugin
         run: pnpm rollup-plugin
 
+      - name: Test jest transformer
+        run: pnpm jest-transformer
+
       # - name: Run Unit Test Against Package
       #   # pnpm has a bug with pack script https://github.com/pnpm/pnpm/issues/4351
       #   run: |
