@@ -1,13 +1,16 @@
 # json-map-keys
 
-> Replace json values with the key path.
+Replace object values with the full keys path.
 
 Example:
 
 ```json
 {
-  "a": {
-    "b": "Text Note"
+  "foo": {
+    "bar": "Bar value",
+    "baz": {
+      "qux": 1234
+    }
   }
 }
 ```
@@ -16,16 +19,25 @@ Will generate
 
 ```json
 {
-  "a": {
-    "b": "a.b"
+  "foo": {
+    "bar": "foo.bar",
+    "baz": {
+      "qux": "foo.baz.qux"
+    }
   }
 }
+```
+
+## Install
+
+```sh
+npm install json-map-keys --save
 ```
 
 ## Usage
 
 ```js
-import mapKeys from 'json-map-keys'
+import { jsonMapKeys } from 'json-map-keys'
 
 const data = { a: { b: 'Text Note' } }
 // Result { a: { b: 'a.b' } }
