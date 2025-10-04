@@ -18,12 +18,13 @@
   },
   "funding": "https://github.com/sponsors/tiagoporto",
   "license": "MIT",
-  "main": "./index.js",
+  "type": "module",
+  "main": "./index.mjs",
   "dependencies": {
     "json-map-keys": "^1.0.0-beta.1",
-    "loader-utils": "^2.0.0"
+    "loader-utils": "^3.3.1"
   },
   "peerDependencies": {
-    "jest": ">= 24"
+    "jest": ">= 27"
   }
 }
