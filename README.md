@@ -33,9 +33,9 @@ Will generate
 ## 📦 Packages
 
 - [json-map-keys](./packages/json-map-keys/README.md)
-- [json-map-keys-jest](./packages/json-map-keys-jest/README.md)
-- [json-map-keys-loader](./packages/json-map-keys-loader/README.md)
-- [rollup-plugin-json-map-keys](./packages/json-map-keys-rollup/README.md)
+- [jest-transformer](./packages/jest-transformer/README.md)
+- [webpack-loader](./packages/webpack-loader/README.md)
+- [rollup-plugin](./packages/rollup-plugin/README.md)
 
 ### json-map-keys
 
