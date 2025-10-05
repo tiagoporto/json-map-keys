@@ -1,5 +1,5 @@
 import { createFilter, dataToEsm } from '@rollup/pluginutils'
-import jsonMapKeys from 'json-map-keys'
+import { jsonMapKeys } from 'json-map-keys'
 import { interpolateName } from 'loader-utils'
 
 const mapKeys = (options) => {
