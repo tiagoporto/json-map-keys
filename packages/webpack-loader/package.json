@@ -20,10 +20,6 @@
   "funding": "https://github.com/sponsors/tiagoporto",
   "license": "MIT",
   "main": "./index.mjs",
-  "scripts": {
-    "release": "semantic-release",
-    "release:dry-run": "semantic-release --dry-run"
-  },
   "dependencies": {
     "json-map-keys": "^1.0.0-beta.1",
     "loader-utils": "^3.3.1"

@@ -1,7 +1,6 @@
 import { env } from 'node:process'
 
 const config = {
-  extends: 'semantic-release-monorepo',
   branches: [
     'main',
     {

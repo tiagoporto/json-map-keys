@@ -23,7 +23,9 @@
     "test:mutation": "stryker run",
     "webpack-loader": "webpack",
     "rollup-plugin": "rollup --config",
-    "jest-transformer": "jest"
+    "jest-transformer": "jest",
+    "release": "multi-semantic-release",
+    "release:dry-run": "multi-semantic-release --dry-run"
   },
   "dependencies": {
     "json-map-keys": "workspace:*",
@@ -32,6 +34,7 @@
     "rollup-plugin-json-map-keys": "workspace:*"
   },
   "devDependencies": {
+    "@anolilab/multi-semantic-release": "^2.0.5",
     "@anolilab/semantic-release-pnpm": "^2.0.4",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^20.0.0",
@@ -56,7 +59,6 @@
     "remark-cli": "^12.0.1",
     "rollup": "^4.52.4",
     "semantic-release": "^24.2.9",
-    "semantic-release-monorepo": "github:tiagoporto/semantic-release-monorepo",
     "vitest": "^3.2.4",
     "webpack": "^5.102.0",
     "webpack-cli": "^6.0.1"
