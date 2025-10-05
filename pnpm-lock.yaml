@@ -115,8 +115,8 @@ importers:
         specifier: '>= 27'
         version: 27.5.1(node-notifier@8.0.2)
       json-map-keys:
-        specifier: ^1.0.0-beta.1
-        version: 1.0.0-beta.1
+        specifier: ^1.0.0
+        version: 1.0.0
       loader-utils:
         specifier: ^3.3.1
         version: 3.3.1
@@ -142,8 +142,8 @@ importers:
         specifier: ^5.3.0
         version: 5.3.0(rollup@4.52.4)
       json-map-keys:
-        specifier: ^1.0.0-beta.1
-        version: 1.0.0-beta.1
+        specifier: ^1.0.0
+        version: 1.0.0
       loader-utils:
         specifier: ^3.3.1
         version: 3.3.1
@@ -154,8 +154,8 @@ importers:
   packages/webpack-loader:
     dependencies:
       json-map-keys:
-        specifier: ^1.0.0-beta.1
-        version: 1.0.0-beta.1
+        specifier: ^1.0.0
+        version: 1.0.0
       loader-utils:
         specifier: ^3.3.1
         version: 3.3.1
@@ -3976,8 +3976,9 @@ packages:
   json-buffer@3.0.1:
     resolution: {integrity: sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==}
 
-  json-map-keys@1.0.0-beta.1:
-    resolution: {integrity: sha512-x97z+P+kJi/4LYErZAvDQNzcpatrfhwJqbYgxNyzqLYN4sgvO2EhH/tSnbvCJKUVCLDSt7Q9k3CpDiJc0lu5pg==}
+  json-map-keys@1.0.0:
+    resolution: {integrity: sha512-DjZyX0mZq+9UAP0SmbguBPsMC0B351AdEgef+nUtaUQBqEeQcWxzn9CUKxCig4llZge3fiLEETF1iAmhfoD48g==}
+    engines: {node: '>=18'}
 
   json-parse-better-errors@1.0.2:
     resolution: {integrity: sha512-mrqyZKfX5EhL7hvqcV6WG1yYjnjeuYDzDhhcAAUrq8Po85NBQBJP+ZDUT75qZQ98IkUoBqdkExkukOU7Ts2wrw==}
@@ -11121,7 +11122,7 @@ snapshots:
 
   json-buffer@3.0.1: {}
 
-  json-map-keys@1.0.0-beta.1: {}
+  json-map-keys@1.0.0: {}
 
   json-parse-better-errors@1.0.2: {}
 
