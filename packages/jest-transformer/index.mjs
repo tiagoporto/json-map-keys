@@ -1,4 +1,4 @@
-import jsonParser from 'json-map-keys'
+import { jsonMapKeys } from 'json-map-keys'
 import { interpolateName } from 'loader-utils'
 
 export default {
@@ -13,7 +13,7 @@ export default {
         },
       )
     }
-    const resources = jsonParser(JSON.parse(sourceText), prefix)
+    const resources = jsonMapKeys(JSON.parse(sourceText), prefix)
 
     return {
       code: JSON.stringify(resources),
