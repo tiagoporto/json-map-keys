@@ -1,4 +1,4 @@
-import jsonMapKeys from 'json-map-keys'
+import { jsonMapKeys } from 'json-map-keys'
 import { interpolateName } from 'loader-utils'
 
 export default function generateMappings(content) {
