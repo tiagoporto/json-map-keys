@@ -3,7 +3,7 @@ import vitest from '@vitest/eslint-plugin'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  ...tpConfig.configs.base,
+  ...tpConfig.configs.baseTypeChecked,
   {
     files: ['**/*.test.{js,ts}'],
     ignores: ['fixtures/**/*'],

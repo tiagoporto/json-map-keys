@@ -42,9 +42,9 @@ jobs:
       - name: Formatting Check
         run: pnpm format:check
 
-      # - name: Typecheck
-      #   if: success() || failure()
-      #   run: pnpm typecheck
+      - name: Typecheck
+        if: success() || failure()
+        run: pnpm typecheck
 
       # - name: Lint Styles
       #   if: success() || failure()
