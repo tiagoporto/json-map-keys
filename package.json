@@ -24,9 +24,7 @@
     "test:mutation": "stryker run",
     "webpack-loader": "webpack",
     "rollup-plugin": "rollup --config",
-    "jest-transformer": "jest",
-    "release": "multi-semantic-release",
-    "release:dry-run": "multi-semantic-release --dry-run"
+    "jest-transformer": "jest"
   },
   "dependencies": {
     "json-map-keys": "workspace:*",
