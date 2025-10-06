@@ -5,10 +5,10 @@
   "description": "Replace json values with the key path.",
   "homepage": "https://github.com/tiagoporto/json-map-keys/tree/main/packages/json-map-keys#readme",
   "keywords": [
-    "json",
-    "map",
+    "object-value",
+    "object-path",
     "key",
-    "replace-values"
+    "replace-object-value"
   ],
   "author": "Tiago Porto (https://tiagoporto.com)",
   "engines": {
