@@ -40,6 +40,7 @@ Will generate
 ### json-map-keys
 
 [![version](https://img.shields.io/npm/v/json-map-keys?style=flat-square)](https://www.npmjs.com/package/json-map-keys)
+![npm type definitions](https://img.shields.io/npm/types/json-map-keys.svg?style=flat-square)
 [![npm bundle size](https://img.shields.io/bundlephobia/min/json-map-keys?style=flat-square)](https://bundlephobia.com/package/json-map-keys)
 [![Downloads](https://img.shields.io/npm/dm/json-map-keys.svg?style=flat-square)](https://www.npmjs.com/package/json-map-keys)
 
