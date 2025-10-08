@@ -14,7 +14,7 @@
   "author": "Tiago Porto (https://tiagoporto.com)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tiagoporto/json-map-keys.git",
+    "url": "git+https://github.com/tiagoporto/json-map-keys.git",
     "directory": "packages/webpack-loader"
   },
   "funding": "https://github.com/sponsors/tiagoporto",
