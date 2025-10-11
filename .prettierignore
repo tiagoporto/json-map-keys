@@ -3,3 +3,6 @@ coverage
 dist
 reports
 pnpm-lock.yaml
+**/*.js
+**/*.mjs
+**/*.ts

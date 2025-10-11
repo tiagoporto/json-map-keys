@@ -8,9 +8,9 @@ export const jsonMapKeys = (input: Json, prefix = '') => {
 
   for (const key of Object.keys(input)) {
     if (
-      typeof input[key] === 'object' &&
-      !Array.isArray(input[key]) &&
-      input[key] !== null
+      typeof input[key] === 'object'
+      && !Array.isArray(input[key])
+      && input[key] !== null
     ) {
       result[key] = jsonMapKeys(input[key] as Json, `${prefix}${key}.`)
     } else {

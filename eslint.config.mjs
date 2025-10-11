@@ -5,6 +5,13 @@ import vitest from '@vitest/eslint-plugin'
 export default [
   ...tpConfig.configs.baseTypeChecked,
   {
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+      },
+    },
+  },
+  {
     files: ['**/*.test.{js,ts}'],
     ignores: ['fixtures/**/*'],
     plugins: { vitest },
