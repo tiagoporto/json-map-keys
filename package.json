@@ -45,7 +45,7 @@
     "@swc/jest": "^0.2.39",
     "@tiagoporto/dependabot-config": "^2.4.0",
     "@tiagoporto/editor-config": "^2.1.0",
-    "@tiagoporto/eslint-config": "^6.0.0",
+    "@tiagoporto/eslint-config": "^6.0.1",
     "@tiagoporto/prettier-config": "^2.1.0",
     "@tiagoporto/remark-config": "^1.11.0",
     "@vitest/coverage-v8": "^3.2.4",
