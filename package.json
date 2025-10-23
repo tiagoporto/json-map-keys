@@ -58,7 +58,7 @@
     "remark": "^15.0.1",
     "remark-cli": "^12.0.1",
     "rollup": "^4.52.5",
-    "semantic-release": "^24.2.9",
+    "semantic-release": "^25.0.1",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4",
     "webpack": "^5.102.0",
