@@ -25,11 +25,11 @@ importers:
         version: link:packages/rollup-plugin
     devDependencies:
       '@anolilab/multi-semantic-release':
-        specifier: ^2.0.5
-        version: 2.0.6(semantic-release@24.2.9(typescript@5.9.3))(typescript@5.9.3)
+        specifier: ^3.0.0-alpha.3
+        version: 3.0.0-alpha.3(semantic-release@24.2.9(typescript@5.9.3))(typescript@5.9.3)
       '@anolilab/semantic-release-pnpm':
-        specifier: ^2.0.4
-        version: 2.0.4(@types/node@24.6.2)(yaml@2.8.1)
+        specifier: ^3.0.0-alpha.2
+        version: 3.0.0-alpha.2(@types/node@24.6.2)(yaml@2.8.1)
       '@commitlint/cli':
         specifier: ^20.1.0
         version: 20.1.0(@types/node@24.6.2)(typescript@5.9.3)
@@ -168,25 +168,40 @@ importers:
 
 packages:
 
+  '@actions/core@1.11.1':
+    resolution: {integrity: sha512-hXJCSrkwfA46Vd9Z3q4cpEpHB1rL5NG04+/rbqW9d3+CSvtB1tYe8UTpAlixa1vj0m/ULglfEK2UKxMGxCxv5A==}
+
+  '@actions/exec@1.1.1':
+    resolution: {integrity: sha512-+sCcHHbVdk93a0XT19ECtO/gIXoxvdsgQLzb2fE2/5sIZmWQuluYyjPQtrtTHdU1YzTZ7bAPN4sITq2xi1679w==}
+
+  '@actions/http-client@2.2.3':
+    resolution: {integrity: sha512-mx8hyJi/hjFvbPokCg4uRd4ZX78t+YyRPtnKWwIl+RzNaVuFpQHfmlGVfsKEJN8LwTCvL+DfVgAM04XaHkm6bA==}
+
+  '@actions/io@1.1.3':
+    resolution: {integrity: sha512-wi9JjgKLYS7U/z8PPbco+PvTb/nRWjeoFlJ1Qer83k/3C5PHQi28hiVdeE2kHXmIL99mQFawx8qt/JPjZilJ8Q==}
+
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@anolilab/multi-semantic-release@2.0.6':
-    resolution: {integrity: sha512-epb2SfVEu1OutlJlQt2s3gy3HVgdlWxUB345SZocRx4OLq14v9rsNtPdD7ef1Mm6DCEf5/5df2pKE+ie0+V7NA==}
-    engines: {node: '>=20.8.1'}
+  '@anolilab/multi-semantic-release@3.0.0-alpha.3':
+    resolution: {integrity: sha512-7NygV04ubmxqxg7/jaLLBPQPOQEx8KC8718GH6jyywfv6dmEsZ+7VlG8C9n/81bWkNf7i0ClLCQwHWxonMiDpw==}
+    engines: {node: ^22.14.0 || >=24.10.0}
     os: [darwin, linux, win32]
     hasBin: true
     peerDependencies:
-      semantic-release: '>=22.0.12'
+      semantic-release: '>=24'
 
-  '@anolilab/rc@2.0.4':
-    resolution: {integrity: sha512-vMEW4bXMy6Sumol/MKbWRHuOy38mCr1KxV4yUNrv7GGuYgYAOn1naqL/Krgb0BLcZxXOmquFWAzK58AK1SX+4g==}
-    engines: {node: '>=20.8.1'}
+  '@anolilab/rc@3.0.0-alpha.2':
+    resolution: {integrity: sha512-GpmjTxjIuZd/VGLYqF7f07Ayz+TH+heN+hKpg0kff8g7RXiMf4jd0OZXCek6GFuOpq2DwYMXEgt9Sz24HZPmCw==}
+    engines: {node: ^22.14.0 || >=24.10.0}
 
-  '@anolilab/semantic-release-pnpm@2.0.4':
-    resolution: {integrity: sha512-d3AaL9A8FYA34NoWmm44K6tIuUm02UPq7G4R1+hY3HlN8qX3cmforhK978irK7PigAzjP7UdM88hhf6tF1ls2A==}
-    engines: {node: '>=20.8.1'}
+  '@anolilab/semantic-release-pnpm@3.0.0-alpha.2':
+    resolution: {integrity: sha512-nLWHPGUZ2ypP3ghQfcARGo6mBH4vEOPF2NT0wK17QAPLk2+58f2H2LctCfL01jjNWYm0HgGTFXkqX84HcG7eGQ==}
+    engines: {node: ^22.14.0 || >=24.10.0}
+
+  '@antfu/install-pkg@1.1.0':
+    resolution: {integrity: sha512-MGQsmw10ZyI+EJo45CdSER4zEb+p31LpDAFp2Z3gkSd1yqVZGi0Ebx++YTEMonJy4oChEMLsxZ64j8FH6sSqtQ==}
 
   '@babel/code-frame@7.27.1':
     resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
@@ -769,6 +784,10 @@ packages:
     resolution: {integrity: sha512-sB5uyeq+dwCWyPi31B2gQlVlo+j5brPlWx4yZBrEaRo/nhdDE8Xke1gsGgtiBdaBTxuTkceLVuVt/pclrasb0A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@fastify/busboy@2.1.1':
+    resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
+    engines: {node: '>=14'}
+
   '@html-eslint/eslint-plugin@0.47.0':
     resolution: {integrity: sha512-eZWk+qVDwYBs7HWDEo4WyprseqbUGyyCw/+sk4/C+0gQ8e4PsaeMPeKyttUwtrqkLBBh2YoGHAwrQUbwG7m2Fw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -811,6 +830,10 @@ packages:
     resolution: {integrity: sha512-JWaTfCxI1eTmJ1BIv86vUfjVatOdxwD0DAVKYevY8SazeUUZtW+tNbsdejVO1GYE0GXJW1N1ahmiC3TFd+7wZA==}
     engines: {node: '>=18'}
 
+  '@inquirer/ansi@1.0.1':
+    resolution: {integrity: sha512-yqq0aJW/5XPhi5xOAL1xRCpe1eh8UFVgYFpFsjEqmIR8rKLyP+HINvFXwUaxYICflJrVlxnp7lLN6As735kVpw==}
+    engines: {node: '>=18'}
+
   '@inquirer/checkbox@4.2.4':
     resolution: {integrity: sha512-2n9Vgf4HSciFq8ttKXk+qy+GsyTXPV1An6QAwe/8bkbbqvG4VW1I/ZY1pNu2rf+h9bdzMLPbRSfcNxkHBy/Ydw==}
     engines: {node: '>=18'}
@@ -829,8 +852,26 @@ packages:
       '@types/node':
         optional: true
 
+  '@inquirer/confirm@5.1.19':
+    resolution: {integrity: sha512-wQNz9cfcxrtEnUyG5PndC8g3gZ7lGDBzmWiXZkX8ot3vfZ+/BLjR8EvyGX4YzQLeVqtAlY/YScZpW7CW8qMoDQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
   '@inquirer/core@10.2.2':
     resolution: {integrity: sha512-yXq/4QUnk4sHMtmbd7irwiepjB8jXU0kkFRL4nr/aDBA2mDz13cMakEWdDwX3eSCTkk03kwcndD1zfRAIlELxA==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/core@10.3.0':
+    resolution: {integrity: sha512-Uv2aPPPSK5jeCplQmQ9xadnFx2Zhj9b5Dj7bU6ZeCdDNNY11nhYy4btcSdtDguHqCT2h5oNeQTcUNSGGLA7NTA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@types/node': '>=18'
@@ -867,6 +908,10 @@ packages:
 
   '@inquirer/figures@1.0.13':
     resolution: {integrity: sha512-lGPVU3yO9ZNqA7vTYz26jny41lE7yoQansmqdMLBEfqaGsmdg7V3W9mK9Pvb5IL4EVZ9GnSDGMO/cJXud5dMaw==}
+    engines: {node: '>=18'}
+
+  '@inquirer/figures@1.0.14':
+    resolution: {integrity: sha512-DbFgdt+9/OZYFM+19dbpXOSeAstPy884FPy1KjDu4anWwymZeOYhMY1mdFri172htv6mvc/uvIAAi7b7tvjJBQ==}
     engines: {node: '>=18'}
 
   '@inquirer/input@4.2.4':
@@ -934,6 +979,15 @@ packages:
 
   '@inquirer/type@3.0.8':
     resolution: {integrity: sha512-lg9Whz8onIHRthWaN1Q9EGLa/0LFJjyM8mEUbL1eTi6yMGvBf8gvyDLtxSXztQsxMvhxxNpJYrwa1YHdq+w4Jw==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/type@3.0.9':
+    resolution: {integrity: sha512-QPaNt/nmE2bLGQa9b7wwyRJoLZ7pN6rcyXvzU0YCmivmJyq1BVo94G98tStRWkoD1RgDX5C+dPlhhHzNdu/W/w==}
     engines: {node: '>=18'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1825,24 +1879,24 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@visulima/fs@3.1.9':
-    resolution: {integrity: sha512-0D9iREfekQmjAgOq+L3CU9TgpeunIwQ4BISq0vxEZuv2CjOLqqHGlkgFRlEgh2pBrHO3azF0OUGbPoK/1QmCUQ==}
-    engines: {node: '>=18.0.0 <=23.x'}
+  '@visulima/fs@4.0.2':
+    resolution: {integrity: sha512-kKOHGP96FwxdgnVQwY3qdy1qoPWX8iKF5U5ZSWy/0UnVC+a1Ydf4Qz5gEcZRVclF3zMwMTM7Dh9kU3XZyHsX1g==}
+    engines: {node: '>=20.19 <=25.x'}
     os: [darwin, linux, win32]
     peerDependencies:
-      yaml: ^2.7.0
+      yaml: ^2.7.1
     peerDependenciesMeta:
       yaml:
         optional: true
 
-  '@visulima/package@3.6.1':
-    resolution: {integrity: sha512-dl36K1Y1clZbk0ouomnZbUxAE+ELAi2WgQeqSyxCRgY+HesbXgZBKDsJ811l3WWXJsaTv5m4oopfGzTJI34sUg==}
-    engines: {node: '>=18.0.0 <=23.x'}
+  '@visulima/package@4.1.2':
+    resolution: {integrity: sha512-lOo1PeozOJiTu6H0kMoll8W2rdL6YXtfcBuDbaEab2PxysCUAtdFbgX4bHQ3Wnc0Cu36S6fum2gW5ngNdBPJLQ==}
+    engines: {node: '>=20.19 <=24.*'}
     os: [darwin, linux, win32]
 
-  '@visulima/path@1.4.0':
-    resolution: {integrity: sha512-lhtA4woh4KsXWyn3BJ/qYE/HSt+agsHeSGb7j3UeHpRyf3R4ErObR25snvt+Rc4Xlqb1T68U38wjqZ2YpmUGNw==}
-    engines: {node: '>=18.0.0 <=23.x'}
+  '@visulima/path@2.0.1':
+    resolution: {integrity: sha512-IRBzE7Vf55R2BBxebxjcgUrC2owbuLYs7afhMYymFfS9DNJ5esoABlhu+nQxcn3a0NeVXHNOeL+j52eV7k4jmA==}
+    engines: {node: '>=20.19 <=25.x'}
     os: [darwin, linux, win32]
 
   '@vitest/coverage-v8@3.2.4':
@@ -4920,6 +4974,9 @@ packages:
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
 
+  package-manager-detector@1.5.0:
+    resolution: {integrity: sha512-uBj69dVlYe/+wxj8JOpr97XfsxH/eumMt6HqjNTmJDf/6NO9s+0uxeOneIz3AsPt2m6y9PqzDzd3ATcU17MNfw==}
+
   parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
@@ -5857,6 +5914,10 @@ packages:
     resolution: {integrity: sha512-MeQTA1r0litLUf0Rp/iisCaL8761lKAZHaimlbGK4j0HysC4PLfqygQj9srcs0m2RdtDYnF8UuYyKpbjHYp7Jw==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
+  tagged-tag@1.0.0:
+    resolution: {integrity: sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==}
+    engines: {node: '>=20'}
+
   tapable@2.2.0:
     resolution: {integrity: sha512-FBk4IesMV1rBxX2tfiK8RAmogtWn53puLOQlvO8XuwlgxcYbP4mVPS9Ph4aeamSyyVjOl24aYWAuc8U5kCVwMw==}
     engines: {node: '>=6'}
@@ -6058,6 +6119,10 @@ packages:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
 
+  type-fest@5.1.0:
+    resolution: {integrity: sha512-wQ531tuWvB6oK+pchHIu5lHe5f5wpSCqB8Kf4dWQRbOYc9HTge7JL0G4Qd44bh6QuJCccIzL3bugb8GI0MwHrg==}
+    engines: {node: '>=20'}
+
   typed-array-buffer@1.0.3:
     resolution: {integrity: sha512-nAYYwfY3qnzX30IkA6AQZjVbtK6duGontcQm1WSG1MD94YLqK0515GNApXkoxKOWMusVssAHWLh9SeaoefYFGw==}
     engines: {node: '>= 0.4'}
@@ -6120,6 +6185,10 @@ packages:
 
   undici-types@7.13.0:
     resolution: {integrity: sha512-Ov2Rr9Sx+fRgagJ5AX0qvItZG/JKKoBRAVITs1zk7IqZGTJUwgUr7qoYBpWwakpWilTZFM98rG/AFRocu10iIQ==}
+
+  undici@5.29.0:
+    resolution: {integrity: sha512-raqeBD6NQK4SkWhQzeYKd1KmIG6dllBOTt55Rmkt4HtI9mwdWtJljnrXjAFUBLTSN67HWrOIZ3EPF4kjUw80Bg==}
+    engines: {node: '>=14.0'}
 
   undici@6.21.3:
     resolution: {integrity: sha512-gBLkYIlEnSp8pFbT64yFgGE6UIB9tAkhukC23PmMDCe5Nd+cRqKxSjw5y54MK2AZMgZfJWMaNE4nYUHgi1XEOw==}
@@ -6577,12 +6646,28 @@ packages:
 
 snapshots:
 
+  '@actions/core@1.11.1':
+    dependencies:
+      '@actions/exec': 1.1.1
+      '@actions/http-client': 2.2.3
+
+  '@actions/exec@1.1.1':
+    dependencies:
+      '@actions/io': 1.1.3
+
+  '@actions/http-client@2.2.3':
+    dependencies:
+      tunnel: 0.0.6
+      undici: 5.29.0
+
+  '@actions/io@1.1.3': {}
+
   '@ampproject/remapping@2.3.0':
     dependencies:
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
 
-  '@anolilab/multi-semantic-release@2.0.6(semantic-release@24.2.9(typescript@5.9.3))(typescript@5.9.3)':
+  '@anolilab/multi-semantic-release@3.0.0-alpha.3(semantic-release@24.2.9(typescript@5.9.3))(typescript@5.9.3)':
     dependencies:
       '@semrel-extra/topo': 1.14.1
       blork: 9.3.0
@@ -6595,7 +6680,7 @@ snapshots:
       lodash-es: 4.17.21
       resolve-from: 5.0.0
       semantic-release: 24.2.9(typescript@5.9.3)
-      semver: 7.7.2
+      semver: 7.7.3
       signale: 1.4.0
       stream-buffers: 3.0.3
       yargs: 18.0.0
@@ -6603,30 +6688,37 @@ snapshots:
       - supports-color
       - typescript
 
-  '@anolilab/rc@2.0.4(yaml@2.8.1)':
+  '@anolilab/rc@3.0.0-alpha.2(yaml@2.8.1)':
     dependencies:
-      '@visulima/fs': 3.1.9(yaml@2.8.1)
-      '@visulima/path': 1.4.0
+      '@visulima/fs': 4.0.2(yaml@2.8.1)
+      '@visulima/path': 2.0.1
       ini: 5.0.0
       ts-deepmerge: 7.0.3
     transitivePeerDependencies:
       - yaml
 
-  '@anolilab/semantic-release-pnpm@2.0.4(@types/node@24.6.2)(yaml@2.8.1)':
+  '@anolilab/semantic-release-pnpm@3.0.0-alpha.2(@types/node@24.6.2)(yaml@2.8.1)':
     dependencies:
-      '@anolilab/rc': 2.0.4(yaml@2.8.1)
+      '@actions/core': 1.11.1
+      '@anolilab/rc': 3.0.0-alpha.2(yaml@2.8.1)
       '@semantic-release/error': 4.0.0
-      '@visulima/fs': 3.1.9(yaml@2.8.1)
-      '@visulima/package': 3.6.1(@types/node@24.6.2)(yaml@2.8.1)
-      '@visulima/path': 1.4.0
+      '@visulima/fs': 4.0.2(yaml@2.8.1)
+      '@visulima/package': 4.1.2(@types/node@24.6.2)
+      '@visulima/path': 2.0.1
+      env-ci: 11.2.0
       execa: 9.6.0
       ini: 5.0.0
       normalize-url: 8.1.0
       registry-auth-token: 5.1.0
-      semver: 7.7.2
+      semver: 7.7.3
     transitivePeerDependencies:
       - '@types/node'
       - yaml
+
+  '@antfu/install-pkg@1.1.0':
+    dependencies:
+      package-manager-detector: 1.5.0
+      tinyexec: 1.0.1
 
   '@babel/code-frame@7.27.1':
     dependencies:
@@ -7300,6 +7392,8 @@ snapshots:
       '@eslint/core': 0.16.0
       levn: 0.4.1
 
+  '@fastify/busboy@2.1.1': {}
+
   '@html-eslint/eslint-plugin@0.47.0(eslint@9.37.0(jiti@2.5.1))(jiti@2.5.1)':
     dependencies:
       '@eslint/plugin-kit': 0.3.5
@@ -7360,6 +7454,8 @@ snapshots:
 
   '@inquirer/ansi@1.0.0': {}
 
+  '@inquirer/ansi@1.0.1': {}
+
   '@inquirer/checkbox@4.2.4(@types/node@24.6.2)':
     dependencies:
       '@inquirer/ansi': 1.0.0
@@ -7377,11 +7473,31 @@ snapshots:
     optionalDependencies:
       '@types/node': 24.6.2
 
+  '@inquirer/confirm@5.1.19(@types/node@24.6.2)':
+    dependencies:
+      '@inquirer/core': 10.3.0(@types/node@24.6.2)
+      '@inquirer/type': 3.0.9(@types/node@24.6.2)
+    optionalDependencies:
+      '@types/node': 24.6.2
+
   '@inquirer/core@10.2.2(@types/node@24.6.2)':
     dependencies:
       '@inquirer/ansi': 1.0.0
       '@inquirer/figures': 1.0.13
       '@inquirer/type': 3.0.8(@types/node@24.6.2)
+      cli-width: 4.1.0
+      mute-stream: 2.0.0
+      signal-exit: 4.1.0
+      wrap-ansi: 6.2.0
+      yoctocolors-cjs: 2.1.3
+    optionalDependencies:
+      '@types/node': 24.6.2
+
+  '@inquirer/core@10.3.0(@types/node@24.6.2)':
+    dependencies:
+      '@inquirer/ansi': 1.0.1
+      '@inquirer/figures': 1.0.14
+      '@inquirer/type': 3.0.9(@types/node@24.6.2)
       cli-width: 4.1.0
       mute-stream: 2.0.0
       signal-exit: 4.1.0
@@ -7414,6 +7530,8 @@ snapshots:
       '@types/node': 24.6.2
 
   '@inquirer/figures@1.0.13': {}
+
+  '@inquirer/figures@1.0.14': {}
 
   '@inquirer/input@4.2.4(@types/node@24.6.2)':
     dependencies:
@@ -7480,6 +7598,10 @@ snapshots:
       '@types/node': 24.6.2
 
   '@inquirer/type@3.0.8(@types/node@24.6.2)':
+    optionalDependencies:
+      '@types/node': 24.6.2
+
+  '@inquirer/type@3.0.9(@types/node@24.6.2)':
     optionalDependencies:
       '@types/node': 24.6.2
 
@@ -8601,23 +8723,27 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.11.1':
     optional: true
 
-  '@visulima/fs@3.1.9(yaml@2.8.1)':
+  '@visulima/fs@4.0.2(yaml@2.8.1)':
     dependencies:
-      '@visulima/path': 1.4.0
+      '@visulima/path': 2.0.1
+      type-fest: 5.1.0
     optionalDependencies:
       yaml: 2.8.1
 
-  '@visulima/package@3.6.1(@types/node@24.6.2)(yaml@2.8.1)':
+  '@visulima/package@4.1.2(@types/node@24.6.2)':
     dependencies:
-      '@inquirer/confirm': 5.1.18(@types/node@24.6.2)
-      '@visulima/fs': 3.1.9(yaml@2.8.1)
-      '@visulima/path': 1.4.0
+      '@antfu/install-pkg': 1.1.0
+      '@inquirer/confirm': 5.1.19(@types/node@24.6.2)
+      '@visulima/fs': 4.0.2(yaml@2.8.1)
+      '@visulima/path': 2.0.1
+      json5: 2.2.3
       normalize-package-data: 8.0.0
+      type-fest: 5.1.0
+      yaml: 2.8.1
     transitivePeerDependencies:
       - '@types/node'
-      - yaml
 
-  '@visulima/path@1.4.0': {}
+  '@visulima/path@2.0.1': {}
 
   '@vitest/coverage-v8@3.2.4(vitest@3.2.4(@types/debug@4.1.12)(@types/node@24.6.2)(jiti@2.5.1)(jsdom@16.7.0)(terser@5.44.0)(yaml@2.8.1))':
     dependencies:
@@ -12263,7 +12389,7 @@ snapshots:
   normalize-package-data@8.0.0:
     dependencies:
       hosted-git-info: 9.0.0
-      semver: 7.7.2
+      semver: 7.7.3
       validate-npm-package-license: 3.0.4
 
   normalize-path@3.0.0: {}
@@ -12448,6 +12574,8 @@ snapshots:
   p-try@2.2.0: {}
 
   package-json-from-dist@1.0.1: {}
+
+  package-manager-detector@1.5.0: {}
 
   parent-module@1.0.1:
     dependencies:
@@ -13921,6 +14049,8 @@ snapshots:
     dependencies:
       '@pkgr/core': 0.2.9
 
+  tagged-tag@1.0.0: {}
+
   tapable@2.2.0: {}
 
   tapable@2.3.0: {}
@@ -14079,6 +14209,10 @@ snapshots:
 
   type-fest@4.41.0: {}
 
+  type-fest@5.1.0:
+    dependencies:
+      tagged-tag: 1.0.0
+
   typed-array-buffer@1.0.3:
     dependencies:
       call-bound: 1.0.4
@@ -14158,6 +14292,10 @@ snapshots:
   undici-types@7.11.0: {}
 
   undici-types@7.13.0: {}
+
+  undici@5.29.0:
+    dependencies:
+      '@fastify/busboy': 2.1.1
 
   undici@6.21.3: {}
 
