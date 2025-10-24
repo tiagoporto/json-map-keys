@@ -18,6 +18,7 @@ const config = {
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
+    '@sebbo2002/semantic-release-jsr',
     '@anolilab/semantic-release-pnpm',
   ],
 }

@@ -1,5 +1,5 @@
 {
-  "name": "json-map-keys",
+  "name": "object-value-to-object-path",
   "version": "0.0.0-development",
   "type": "module",
   "description": "Replace json values with the key path.",
