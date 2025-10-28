@@ -52,8 +52,8 @@ importers:
         specifier: ^0.2.39
         version: 0.2.39(@swc/core@1.13.5)
       '@tiagoporto/dependabot-config':
-        specifier: ^2.4.1
-        version: 2.4.1
+        specifier: ^2.4.2
+        version: 2.4.2
       '@tiagoporto/editor-config':
         specifier: ^2.1.0
         version: 2.1.0
@@ -104,7 +104,7 @@ importers:
         version: 3.2.4(@types/debug@4.1.12)(@types/node@24.6.2)(jiti@2.5.1)(jsdom@16.7.0)(terser@5.44.0)(yaml@2.8.1)
       webpack:
         specifier: ^5.102.0
-        version: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1(webpack@5.102.1))
+        version: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
       webpack-cli:
         specifier: ^6.0.1
         version: 6.0.1(webpack@5.102.1)
@@ -161,7 +161,7 @@ importers:
         version: 3.3.1
       webpack:
         specifier: '>= 5'
-        version: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1(webpack@5.102.1))
+        version: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
 
 packages:
 
@@ -1536,8 +1536,8 @@ packages:
     resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
     engines: {node: '>=14.16'}
 
-  '@tiagoporto/dependabot-config@2.4.1':
-    resolution: {integrity: sha512-F2NgbJM/Ny6Z0TeNfwDDPz9E5Cb1dG6oszPUi9kkf8Jv/Dfh8+suMCXFoNlHgrRy+pJl9YUpyfkL+HfVQIIfkw==}
+  '@tiagoporto/dependabot-config@2.4.2':
+    resolution: {integrity: sha512-bdDWRbtJ6OBS/XouhEzQPQzeiGsCdkLM/dlxxk8JmDifjDptThTC09IFIlj4guLN0g73aGMj3B4KcZWBZiDUlQ==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -8299,7 +8299,7 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tiagoporto/dependabot-config@2.4.1': {}
+  '@tiagoporto/dependabot-config@2.4.2': {}
 
   '@tiagoporto/editor-config@2.1.0': {}
 
@@ -8877,19 +8877,19 @@ snapshots:
       '@webassemblyjs/ast': 1.14.1
       '@xtuc/long': 4.2.2
 
-  '@webpack-cli/configtest@3.0.1(webpack-cli@6.0.1(webpack@5.102.1))(webpack@5.102.1)':
+  '@webpack-cli/configtest@3.0.1(webpack-cli@6.0.1)(webpack@5.102.1)':
     dependencies:
-      webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1(webpack@5.102.1))
+      webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
       webpack-cli: 6.0.1(webpack@5.102.1)
 
-  '@webpack-cli/info@3.0.1(webpack-cli@6.0.1(webpack@5.102.1))(webpack@5.102.1)':
+  '@webpack-cli/info@3.0.1(webpack-cli@6.0.1)(webpack@5.102.1)':
     dependencies:
-      webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1(webpack@5.102.1))
+      webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
       webpack-cli: 6.0.1(webpack@5.102.1)
 
-  '@webpack-cli/serve@3.0.1(webpack-cli@6.0.1(webpack@5.102.1))(webpack@5.102.1)':
+  '@webpack-cli/serve@3.0.1(webpack-cli@6.0.1)(webpack@5.102.1)':
     dependencies:
-      webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1(webpack@5.102.1))
+      webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
       webpack-cli: 6.0.1(webpack@5.102.1)
 
   '@xtuc/ieee754@1.2.0': {}
@@ -14018,14 +14018,14 @@ snapshots:
       ansi-escapes: 4.3.2
       supports-hyperlinks: 2.3.0
 
-  terser-webpack-plugin@5.3.14(@swc/core@1.13.5)(webpack@5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1(webpack@5.102.1))):
+  terser-webpack-plugin@5.3.14(@swc/core@1.13.5)(webpack@5.102.1):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       serialize-javascript: 6.0.2
       terser: 5.44.0
-      webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1(webpack@5.102.1))
+      webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
     optionalDependencies:
       '@swc/core': 1.13.5
 
@@ -14604,9 +14604,9 @@ snapshots:
   webpack-cli@6.0.1(webpack@5.102.1):
     dependencies:
       '@discoveryjs/json-ext': 0.6.3
-      '@webpack-cli/configtest': 3.0.1(webpack-cli@6.0.1(webpack@5.102.1))(webpack@5.102.1)
-      '@webpack-cli/info': 3.0.1(webpack-cli@6.0.1(webpack@5.102.1))(webpack@5.102.1)
-      '@webpack-cli/serve': 3.0.1(webpack-cli@6.0.1(webpack@5.102.1))(webpack@5.102.1)
+      '@webpack-cli/configtest': 3.0.1(webpack-cli@6.0.1)(webpack@5.102.1)
+      '@webpack-cli/info': 3.0.1(webpack-cli@6.0.1)(webpack@5.102.1)
+      '@webpack-cli/serve': 3.0.1(webpack-cli@6.0.1)(webpack@5.102.1)
       colorette: 2.0.20
       commander: 12.1.0
       cross-spawn: 7.0.6
@@ -14615,7 +14615,7 @@ snapshots:
       import-local: 3.2.0
       interpret: 3.1.1
       rechoir: 0.8.0
-      webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1(webpack@5.102.1))
+      webpack: 5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1)
       webpack-merge: 6.0.1
 
   webpack-merge@6.0.1:
@@ -14626,7 +14626,7 @@ snapshots:
 
   webpack-sources@3.3.3: {}
 
-  webpack@5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1(webpack@5.102.1)):
+  webpack@5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.8
@@ -14650,7 +14650,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.0
-      terser-webpack-plugin: 5.3.14(@swc/core@1.13.5)(webpack@5.102.1(@swc/core@1.13.5)(webpack-cli@6.0.1(webpack@5.102.1)))
+      terser-webpack-plugin: 5.3.14(@swc/core@1.13.5)(webpack@5.102.1)
       watchpack: 2.4.4
       webpack-sources: 3.3.3
     optionalDependencies:
