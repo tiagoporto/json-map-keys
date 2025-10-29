@@ -11,6 +11,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "$CI = true || (dependabot-config && editor-config)",
+    "prepare": "lefthook install",
     "check-docs": "remark --frail . --ext md,markdown,mdx",
     "check-update": "pnpm update --interactive --latest",
     "checks": "pnpm check-docs && pnpm format:check && pnpm typecheck && pnpm lint",
@@ -48,7 +49,7 @@
     "@tiagoporto/prettier-config": "^2.1.0",
     "@tiagoporto/remark-config": "^1.11.0",
     "@vitest/coverage-v8": "^3.2.4",
-    "@vitest/eslint-plugin": "^1.3.16",
+    "@vitest/eslint-plugin": "^1.3.26",
     "eslint": "^9.37.0",
     "jest": "^27.0.0",
     "lefthook": "^2.0.1",
