@@ -37,7 +37,7 @@
     "@anolilab/semantic-release-pnpm": "^3.0.0",
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
-    "@sebbo2002/semantic-release-jsr": "^3.0.1",
+    "@sebbo2002/semantic-release-jsr": "3.0.2-develop.13",
     "@stryker-mutator/core": "^9.1.1",
     "@stryker-mutator/typescript-checker": "^9.1.1",
     "@stryker-mutator/vitest-runner": "^9.1.1",
