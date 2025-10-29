@@ -1,6 +1,6 @@
 type Json = Record<string, unknown>
 
-export const jsonMapKeys = (input: Json, prefix = '') => {
+export const jsonMapKeys = (input: Json, prefix = ''): Json => {
   const result: Json = {}
   if (!input) {
     return result
