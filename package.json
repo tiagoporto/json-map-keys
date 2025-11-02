@@ -42,7 +42,7 @@
     "@stryker-mutator/typescript-checker": "^9.1.1",
     "@stryker-mutator/vitest-runner": "^9.1.1",
     "@swc/jest": "^0.2.39",
-    "@tiagoporto/dependabot-config": "^2.4.2",
+    "@tiagoporto/dependabot-config": "^2.5.0",
     "@tiagoporto/editor-config": "^2.1.0",
     "@tiagoporto/eslint-config": "^6.0.1",
     "@tiagoporto/prettier-config": "^2.1.0",
