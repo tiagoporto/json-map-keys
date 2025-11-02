@@ -45,7 +45,7 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile --ignore-scripts
 
-      - name: Bump version, add tag, and publish github release
+      - name: Bump versions, add tags, publish packages and create github releases
         env:
           BRANCH: ${{github.ref_name}}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
