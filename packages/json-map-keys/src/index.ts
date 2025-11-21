@@ -1,6 +1,6 @@
 type Json = Record<string, unknown>
 
-export const jsonMapKeys = (input: Json, prefix = ''): Json => {
+export const objectValueToObjectPath = (input: Json, prefix = ''): Json => {
   const result: Json = {}
   if (!input) {
     return result
@@ -12,7 +12,7 @@ export const jsonMapKeys = (input: Json, prefix = ''): Json => {
       && !Array.isArray(input[key])
       && input[key] !== null
     ) {
-      result[key] = jsonMapKeys(input[key] as Json, `${prefix}${key}.`)
+      result[key] = objectValueToObjectPath(input[key] as Json, `${prefix}${key}.`)
     } else {
       const keyPrefix = key.split('_')[0]
 

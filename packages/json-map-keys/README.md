@@ -1,4 +1,4 @@
-# json-map-keys
+# object-value-to-object-path
 
 Replace object values with the full keys path.
 
@@ -31,17 +31,17 @@ Will generate
 ## Install
 
 ```sh
-npm install json-map-keys --save
+npm install object-value-to-object-path --save
 ```
 
 ## Usage
 
 ```js
-import { jsonMapKeys } from 'json-map-keys'
+import { objectValueToObjectPath } from 'object-value-to-object-path'
 
 const data = { a: { b: 'Text Note' } }
 // Result { a: { b: 'a.b' } }
-const result = mapKeys(data)
+const result = objectValueToObjectPath(data)
 ```
 
 ## License
