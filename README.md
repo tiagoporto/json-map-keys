@@ -39,41 +39,44 @@ Will generate
 
 ### object-value-to-object-path
 
-[![version](https://img.shields.io/npm/v/object-value-to-object-path?style=flat-square)](https://www.npmjs.com/package/object-value-to-object-path)
+[![version](https://img.shields.io/npm/v/object-value-to-object-path?style=flat-square&label=)](https://www.npmjs.com/package/object-value-to-object-path)
 ![npm type definitions](https://img.shields.io/npm/types/object-value-to-object-path.svg?style=flat-square)
 [![npm bundle size](https://img.shields.io/bundlephobia/min/object-value-to-object-path?style=flat-square)](https://bundlephobia.com/package/object-value-to-object-path)
 [![Downloads](https://img.shields.io/npm/dm/object-value-to-object-path.svg?style=flat-square)](https://www.npmjs.com/package/object-value-to-object-path)
 
-<!-- ![npm type definitions](https://img.shields.io/npm/types/json-map-keys.svg?style=flat-square) -->
+[![NPM](https://img.shields.io/badge/npm-555?style=flat-square&logo=npm&labelColor=red)](https://www.npmjs.com/package/object-value-to-object-path)
+[![jsr](https://img.shields.io/badge/jsr-555?style=flat-square&logo=jsr&labelColor=F7DF1E&logoColor=093344)](https://jsr.io/@tiagoporto/object-value-to-object-path)
 
 Replace object values with the full keys path.
+
+[Docs](packages/object-value-to-object-path/README.md)
 
 ### json-map-keys-jest
 
 [![version](https://img.shields.io/npm/v/json-map-keys-jest?style=flat-square)](https://www.npmjs.com/package/json-map-keys-jest)
 [![Downloads](https://img.shields.io/npm/dm/json-map-keys-jest.svg?style=flat-square)](https://www.npmjs.com/package/json-map-keys-jest)
 
-<!-- ![npm type definitions](https://img.shields.io/npm/types/json-map-keys-jest.svg?style=flat-square) -->
-
 Jest transformer
+
+[Docs](packages/jest-transformer/README.md)
 
 ### json-map-keys-loader
 
 [![version](https://img.shields.io/npm/v/json-map-keys-loader?style=flat-square)](https://www.npmjs.com/package/json-map-keys-loader)
 [![Downloads](https://img.shields.io/npm/dm/json-map-keys-loader.svg?style=flat-square)](https://www.npmjs.com/package/json-map-keys-loader)
 
-<!-- ![npm type definitions](https://img.shields.io/npm/types/json-map-keys-loader.svg?style=flat-square) -->
-
 Webpack loader
+
+[Docs](packages/webpack-loader/README.md)
 
 ### rollup-plugin-json-map-keys
 
 [![version](https://img.shields.io/npm/v/rollup-plugin-json-map-keys?style=flat-square)](https://www.npmjs.com/package/rollup-plugin-json-map-keys)
 [![Downloads](https://img.shields.io/npm/dm/rollup-plugin-json-map-keys.svg?style=flat-square)](https://www.npmjs.com/package/rollup-plugin-json-map-keys)
 
-<!-- ![npm type definitions](https://img.shields.io/npm/types/rollup-plugin-json-map-keys.svg?style=flat-square) -->
-
 Rollup plugin
+
+[Docs](packages/rollup-plugin/README.md)
 
 ## 🤜🤛 Donating
 
