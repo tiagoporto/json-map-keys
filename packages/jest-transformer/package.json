@@ -2,7 +2,7 @@
   "name": "json-map-keys-jest",
   "version": "0.0.0-development",
   "description": "Jest transformer to replace json values with the key path.",
-  "homepage": "https://github.com/tiagoporto/json-map-keys/tree/main/packages/jest-transformer#readme",
+  "homepage": "https://github.com/tiagoporto/object-value-to-object-path/tree/main/packages/jest-transformer#readme",
   "keywords": [
     "jest",
     "transformer",
@@ -13,7 +13,7 @@
   "author": "Tiago Porto (https://tiagoporto.com)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tiagoporto/json-map-keys.git",
+    "url": "git+https://github.com/tiagoporto/object-value-to-object-path.git",
     "directory": "packages/jest-transformer"
   },
   "funding": "https://github.com/sponsors/tiagoporto",
