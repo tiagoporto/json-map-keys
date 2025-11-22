@@ -1,5 +1,5 @@
 {
-  "name": "json-map-keys",
+  "name": "object-value-to-object-path-root",
   "private": true,
   "type": "module",
   "engines": {
@@ -27,7 +27,7 @@
     "jest-transformer": "jest"
   },
   "dependencies": {
-    "json-map-keys": "workspace:*",
+    "object-value-to-object-path": "workspace:*",
     "json-map-keys-jest": "workspace:*",
     "json-map-keys-loader": "workspace:*",
     "rollup-plugin-json-map-keys": "workspace:*"

@@ -7,7 +7,7 @@
       2,
       "always",
       [
-        "json-map-keys",
+        "ovtop",
         "jest-transformer",
         "webpack-loader",
         "rollup-plugin"
