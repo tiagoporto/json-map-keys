@@ -30,8 +30,16 @@ Will generate
 
 ## Install
 
-```sh
-npm install object-value-to-object-path --save
+Install with npm:
+
+```bash
+npm install object-value-to-object-path
+```
+
+Install with deno(jsr):
+
+```bash
+deno add jsr:@tiagoporto/object-value-to-object-path
 ```
 
 ## Usage
@@ -46,4 +54,4 @@ const result = objectValueToObjectPath(data)
 
 ## License
 
-JSON Map Keys © 2020 by Tiago Porto is licensed under [MIT License](LICENSE).
+Object Value to Object Path © 2020 by Tiago Porto is licensed under [MIT License](LICENSE).

@@ -3,7 +3,7 @@
   "version": "0.0.0-development",
   "type": "module",
   "description": "Replace json values with the key path.",
-  "homepage": "https://github.com/tiagoporto/json-map-keys/tree/main/packages/json-map-keys#readme",
+  "homepage": "https://github.com/tiagoporto/object-value-to-object-path/tree/main/packages/object-value-to-object-path#readme",
   "keywords": [
     "object-value",
     "object-path",
@@ -16,8 +16,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tiagoporto/json-map-keys.git",
-    "directory": "packages/json-map-keys"
+    "url": "git+https://github.com/tiagoporto/object-value-to-object-path.git",
+    "directory": "packages/object-value-to-object-path"
   },
   "funding": "https://github.com/sponsors/tiagoporto",
   "sideEffects": false,
