@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: Skip actual publish
+        description: Dry-run
         required: false
         type: boolean
         default: true
