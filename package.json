@@ -7,7 +7,7 @@
     "npm": "uses pnpm",
     "pnpm": ">=10"
   },
-  "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977",
+  "packageManager": "pnpm@10.23.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "$CI = true || (dependabot-config && editor-config)",
@@ -27,9 +27,9 @@
     "jest-transformer": "jest"
   },
   "dependencies": {
-    "object-value-to-object-path": "workspace:*",
     "json-map-keys-jest": "workspace:*",
     "json-map-keys-loader": "workspace:*",
+    "object-value-to-object-path": "workspace:*",
     "rollup-plugin-json-map-keys": "workspace:*"
   },
   "devDependencies": {
